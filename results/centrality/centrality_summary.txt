@@ -1,0 +1,252 @@
+================================================================================
+OBJECTIVE 1: CORE PACKAGES IDENTIFICATION - CENTRALITY ANALYSIS
+PyPI Dependency Network - Network Science Project
+================================================================================
+
+Analysis Date: 2025-12-04 14:27:49
+Dataset: PyPI DAG (Ghosts Removed + Cycles Removed)
+Dataset Timestamp: 2025-11-24T21:37:12Z
+
+--------------------------------------------------------------------------------
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Total nodes in dataset: 698,903
+Total edges in dataset: 1,819,937
+Cyclic nodes removed: 1,133
+
+Active nodes in graph: 397,798
+Active edges in graph: 1,819,937
+Graph density: 0.000012
+Is DAG (acyclic): True
+
+Weakly connected components: 1320
+  Largest WCC size: 394,343 nodes
+Strongly connected components: 397798
+  Largest SCC size: 1 nodes
+
+In-degree statistics:
+  Mean: 4.58
+  Median: 0.00
+  Max: 81923
+  Nodes with in-degree = 0 (sources): 306,925
+
+Out-degree statistics:
+  Mean: 4.58
+  Median: 3.00
+  Max: 332
+  Nodes with out-degree = 0 (sinks): 20,742
+
+--------------------------------------------------------------------------------
+CENTRALITY ANALYSIS DETAILS
+--------------------------------------------------------------------------------
+
+Centrality Measures Computed:
+1. PageRank (PRIMARY METRIC)
+   - Parameters: alpha=0.85, max_iter=100, tol=1e-06
+   - Interpretation: Transitive importance in dependency graph
+   - Higher score = more fundamental/critical package
+
+2. In-Degree Centrality
+   - Measures: Number of direct dependents (normalized)
+   - Interpretation: Immediate ecosystem impact
+
+3. Out-Degree Centrality
+   - Measures: Number of dependencies (normalized)
+   - Interpretation: Package complexity/coupling
+
+4. Eigenvector Centrality
+   - Measures: Influence based on neighbor importance
+   - Similar to PageRank but undamped
+
+5. Betweenness Centrality (approximate, k=5000)
+   - Measures: How often package lies on shortest paths
+   - Interpretation: Bridge packages connecting communities
+
+--------------------------------------------------------------------------------
+CENTRALITY SCORE DISTRIBUTIONS
+--------------------------------------------------------------------------------
+
+PAGERANK:
+  Mean:       0.0000025138
+  Median:     0.0000011606
+  Std Dev:    0.0000998198
+  Min:        0.0000011606
+  Max:        0.0328631701
+  Percentiles:
+    25th: 0.0000011606
+    50th: 0.0000011606
+    75th: 0.0000011606
+    90th: 0.0000014703
+    95th: 0.0000020253
+    99th: 0.0000064829
+
+IN DEGREE CENTRALITY:
+  Mean:       0.0000115009
+  Median:     0.0000000000
+  Std Dev:    0.0006280547
+  Min:        0.0000000000
+  Max:        0.2059417240
+  Percentiles:
+    25th: 0.0000000000
+    50th: 0.0000000000
+    75th: 0.0000000000
+    90th: 0.0000050277
+    95th: 0.0000075415
+    99th: 0.0000628461
+
+OUT DEGREE CENTRALITY:
+  Mean:       0.0000115009
+  Median:     0.0000075415
+  Std Dev:    0.0000187840
+  Min:        0.0000000000
+  Max:        0.0008345965
+  Percentiles:
+    25th: 0.0000025138
+    50th: 0.0000075415
+    75th: 0.0000125692
+    90th: 0.0000251385
+    95th: 0.0000351938
+    99th: 0.0000729015
+
+EIGENVECTOR CENTRALITY:
+  Mean:       0.0000106672
+  Median:     0.0000000000
+  Std Dev:    0.0015854731
+  Min:        0.0000000000
+  Max:        0.6721297290
+  Percentiles:
+    25th: 0.0000000000
+    50th: 0.0000000000
+    75th: 0.0000000000
+    90th: 0.0000000000
+    95th: 0.0000000003
+    99th: 0.0000000257
+
+BETWEENNESS CENTRALITY:
+  Mean:       0.0000000002
+  Median:     0.0000000000
+  Std Dev:    0.0000000109
+  Min:        0.0000000000
+  Max:        0.0000032456
+  Percentiles:
+    25th: 0.0000000000
+    50th: 0.0000000000
+    75th: 0.0000000000
+    90th: 0.0000000000
+    95th: 0.0000000000
+    99th: 0.0000000003
+
+--------------------------------------------------------------------------------
+TOP 50 CORE PACKAGES (by PageRank)
+--------------------------------------------------------------------------------
+
+Rank   Package                             PageRank       In-Deg   Out-Deg   In-Deg-Cent  
+--------------------------------------------------------------------------------
+1      numpy                               0.0328631701   81923    0         0.2059417240 
+2      typing-extensions                   0.0313538728   15444    0         0.0388238222 
+3      requests                            0.0252830667   72340    4         0.1818515474 
+4      odoo                                0.0138352706   17859    0         0.0448947579 
+5      colorama                            0.0113942860   7372     0         0.0185320653 
+6      six                                 0.0108689420   9643     0         0.0242410073 
+7      pandas                              0.0103829330   53306    4         0.1340030216 
+8      click                               0.0075994866   27115    1         0.0681629072 
+9      pydantic                            0.0072520736   29279    4         0.0736028678 
+10     certifi                             0.0063801316   5572     0         0.0140071443 
+11     pyyaml                              0.0063637610   27998    0         0.0703826323 
+12     urllib3                             0.0062557439   9868     0         0.0248066225 
+13     idna                                0.0059786321   3667     0         0.0092182696 
+14     scipy                               0.0056136775   31307    1         0.0787009455 
+15     matplotlib                          0.0055623328   33062    9         0.0831127434 
+16     django                              0.0052091106   9396     3         0.0236200876 
+17     python-dateutil                     0.0049175005   11772    1         0.0295929834 
+18     charset-normalizer                  0.0042031366   2541     0         0.0063876801 
+19     pillow                              0.0041371258   16440    0         0.0413276118 
+20     tqdm                                0.0038073567   24086    1         0.0605484707 
+21     packaging                           0.0037011262   7323     0         0.0184088869 
+22     markupsafe                          0.0036907163   1934     0         0.0048617762 
+23     tzdata                              0.0035437608   1143     0         0.0028733248 
+24     httpx                               0.0034979019   13153    4         0.0330646033 
+25     aiohttp                             0.0034308611   11821    8         0.0297161618 
+26     importlib-metadata                  0.0031324796   4696     2         0.0118050161 
+27     rich                                0.0029754991   14581    2         0.0366543740 
+28     torch                               0.0029657881   14303    23        0.0359555251 
+29     zipp                                0.0029613010   1157     0         0.0029085187 
+30     setuptools                          0.0028713673   10507    0         0.0264129694 
+31     pytz                                0.0028188264   6281     0         0.0157894605 
+32     pycparser                           0.0026174827   1138     0         0.0028607556 
+33     jinja2                              0.0025689620   11537    1         0.0290022298 
+34     python-dotenv                       0.0024680258   13734    0         0.0345251472 
+35     cffi                                0.0024263101   1883     1         0.0047335701 
+36     mdurl                               0.0023900786   694      0         0.0017446084 
+37     scikit-learn                        0.0023831788   17837    4         0.0448394533 
+38     beautifulsoup4                      0.0022436397   9827     2         0.0247035548 
+39     pytest                              0.0022370441   9856     7         0.0247764563 
+40     pygments                            0.0022323833   3176     0         0.0079839717 
+41     cryptography                        0.0020545123   6878     2         0.0172902259 
+42     anyio                               0.0020019087   2014     4         0.0050628838 
+43     flask                               0.0019501500   7668     7         0.0192761635 
+44     typer                               0.0019366970   9328     4         0.0234491462 
+45     lxml                                0.0017720965   7821     0         0.0196607818 
+46     attrs                               0.0017312511   4513     0         0.0113449825 
+47     mcp                                 0.0017302147   5780     14        0.0145300241 
+48     boto3                               0.0017186901   7570     3         0.0190298067 
+49     typing-inspection                   0.0017113378   227      1         0.0005706428 
+50     botocore                            0.0016962846   1848     3         0.0046455856 
+
+--------------------------------------------------------------------------------
+CORRELATION BETWEEN CENTRALITY MEASURES
+--------------------------------------------------------------------------------
+
+                        pagerank  in_degree_centrality  out_degree_centrality  eigenvector_centrality  betweenness_centrality
+pagerank                1.000000              0.824325              -0.004209                0.043492                0.391298
+in_degree_centrality    0.824325              1.000000              -0.003761                0.044425                0.577821
+out_degree_centrality  -0.004209             -0.003761               1.000000               -0.001715                0.019930
+eigenvector_centrality  0.043492              0.044425              -0.001715                1.000000                0.003552
+betweenness_centrality  0.391298              0.577821               0.019930                0.003552                1.000000
+
+--------------------------------------------------------------------------------
+KEY FINDINGS
+--------------------------------------------------------------------------------
+
+1. Most Central Package (by PageRank):
+   Package: numpy
+   PageRank: 0.0328631701
+   In-degree: 81923 packages depend on it
+   Out-degree: 0 dependencies
+
+2. Most Depended-Upon Package (by in-degree):
+   Package: numpy
+   In-degree: 81923 direct dependents
+   PageRank: 0.0328631701 (Rank: 1)
+
+3. Most Critical Bridge Package (by betweenness):
+   Package: requests
+   Betweenness: 0.0000032456
+   PageRank: 0.0252830667 (Rank: 3)
+
+4. PageRank Concentration:
+   Top 10 packages avg PageRank: 0.0157213233
+   Top 100 packages avg PageRank: 0.0033395272
+   Overall avg PageRank: 0.0000025138
+   Ratio (Top 10 / Overall): 6253.91x
+
+--------------------------------------------------------------------------------
+OUTPUT FILES
+--------------------------------------------------------------------------------
+
+1. centrality_results.csv
+   - Complete results for all 397,798 packages
+   - All centrality measures included
+
+2. top_packages.csv
+   - Top 100 packages by PageRank
+
+3. centrality_summary.txt (this file)
+   - Comprehensive analysis summary
+
+4. plots/ directory
+   - Visualization plots (if generated)
+
+================================================================================
+END OF SUMMARY
+================================================================================
