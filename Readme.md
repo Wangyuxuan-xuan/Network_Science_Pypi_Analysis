@@ -67,7 +67,26 @@ python generate_random_graphs.py
 
 **Runtime:** ~20-60 minutes (5 graphs × 4-12 min each)
 
-**Algorithm:** For each random graph, performs 18,199,370 edge swap attempts (10× the number of edges) to thoroughly randomize while preserving properties.
+**Randomization Algorithm (Order-Preserving Edge Swaps for DAGs):**
+
+The algorithm randomizes the network topology while preserving critical properties through a sophisticated edge-swapping procedure:
+
+1. **Topological Ordering**: First, compute a topological sort of all nodes (packages), assigning each node a unique index that respects the DAG structure
+2. **Edge Swap Selection**: Randomly select two edges: (u→v) and (x→y)
+3. **Validity Checks**: Before swapping, verify four conditions:
+   - All four nodes (u, v, x, y) are distinct
+   - **DAG preservation**: In topological order, u < y AND x < v (ensures new edges maintain forward direction)
+   - No multi-edges: (u→y) and (x→v) don't already exist
+   - No self-loops: u ≠ y and x ≠ v
+4. **Perform Swap**: If all checks pass, remove edges (u→v) and (x→y), add edges (u→y) and (x→v)
+5. **Repeat**: Perform 10× number of edges swap attempts (18,199,370 attempts per graph) to ensure thorough randomization
+
+This algorithm guarantees:
+- **Exact degree preservation**: Every node maintains its original in-degree and out-degree
+- **DAG property**: No cycles are ever introduced (proven by topological ordering constraint)
+- **Topology randomization**: Only the specific dependency relationships change, not node importance by degree
+
+The topological ordering constraint is the key innovation that allows randomization of DAGs without cycle detection overhead.
 
 ### 3. Compute Baseline Centrality
 
