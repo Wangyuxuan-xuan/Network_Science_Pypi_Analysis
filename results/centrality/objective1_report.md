@@ -6,7 +6,7 @@
 
 ---
 
-## Executive Summary
+## Summary
 
 Using PageRank as the primary centrality measure, we identified the most critical packages in the PyPI dependency network. Our analysis of **397,798 active packages** with **1,819,937 dependency relationships** reveals that the ecosystem exhibits extreme centralization, with a small number of foundational packages supporting the vast majority of the ecosystem. **NumPy** emerges as the single most critical package, followed by **typing-extensions**, **requests**, **odoo**, **colorama** etc.       
 with a PageRank score 6,253× higher than the average package.
@@ -228,8 +228,8 @@ These three packages collectively support over 169,607 direct dependents (42.6% 
 3. **Ignores version constraints**: Our abstraction treats all version dependencies equally
 
 ---
-
-## Comparism with baseline
+# Objective 5 Baseline Comparison
+## Comparism with baseline - Centrality
 
 ![Centrality Analysis](../baseline/centrality/comprehensive_original_vs_baseline.png)
 
@@ -241,3 +241,28 @@ In the randomized networks, PageRank is almost entirely explained by in-degree (
 
 Key packages (typing-extensions, odoo, etc.) have PageRank values several standard deviations above the null expectation, confirming that their importance cannot be explained by degree alone.
 
+```
+For each swap attempt:
+    1. Randomly select two edges: (u, v) and (x, y)
+    2. Propose swap: create (u, y) and (x, v)
+    3. Check validity:
+       a. All four nodes distinct: u ≠ v ≠ x ≠ y
+       b. Order preserved: order[u] < order[y] AND order[x] < order[v]
+       c. No multi-edges: (u, y) ∉ G AND (x, v) ∉ G
+       d. No self-loops: u ≠ y AND x ≠ v
+    4. If valid:
+       - Remove edges (u, v) and (x, y)
+       - Add edges (u, y) and (x, v)
+       - Track success count
+    5. Track attempt and success statistics
+```
+
+```
+Generate N randomized graphs (N = 5 or 10):
+    For i in 1 to N:
+        1. Copy original graph: G_random_i = G.copy()
+        2. Apply edge swaps with progress tracking
+        3. Validate result
+        4. Save to disk (optional): data/random_graph_{i}.pkl
+        5. Track generation statistics
+```
