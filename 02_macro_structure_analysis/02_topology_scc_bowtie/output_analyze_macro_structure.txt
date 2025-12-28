@@ -1,0 +1,37 @@
+(base) yildomer@Omers-MacBook-Pro scc_analysis % python3 analyze_macro_structure.py --graph-dir pypi_clean_graph --output-dir objective2_outputs
+
+[INFO] Loading graph from: pypi_clean_graph
+[INFO] Computing SCCs and analyzing structure...
+
+========================================================================
+MACRO-STRUCTURE & CYCLE ANALYSIS RESULTS
+========================================================================
+Dataset Timestamp: 2025-11-24T21:16:13Z
+Seed Packages: 0
+------------------------------
+Largest SCC (CORE) Size: 81 packages
+
+Bow-Tie Regions:
+  CORE           :     81 ( 0.01%)
+  IN             :      1 ( 0.00%)
+  OUT            :      0 ( 0.00%)
+  TENDRILS       :      0 ( 0.00%)
+  DISCONNECTED   : 699953 (99.99%)
+------------------------------
+Structural Flaws Detected:
+  1. Complex Circular Dependencies (SCC size > 1):
+     - Number of Groups (SCCs): 263
+     - Total Packages Involved: 787
+  2. Self-Loops (Trivial SCC with self-edge):
+     - Total Packages Involved: 346
+  3. Healthy Packages (Valid DAG nodes):
+     - Total: 698902
+========================================================================
+
+[INFO] Saving Results...
+[INFO] Saved CSV summaries to objective2_outputs
+[INFO] Saved Circular Dependencies report to: objective2_outputs/circular_dependencies.json
+[INFO] Saved Self-Loop report to: objective2_outputs/self_loops.json
+[INFO] Generating Visualizations...
+[INFO] Generated 3 plots in objective2_outputs
+[SUCCESS] All operations complete. Outputs in: /Users/yildomer/networkscience/objective2_after_first_discussion/scc_analysis/objective2_outputs

@@ -1,0 +1,25 @@
+(base) yildomer@Omers-MacBook-Pro connectivity_analysis % python analyze_connectivity.py --graph-dir pypi_clean_graph --output-dir objective2_connectivity_outputs
+[INFO] Loading nodes from pypi_clean_graph/nodes.csv...
+[INFO] Loading edges from pypi_clean_graph/edges.csv...
+[INFO] Computing Weakly Connected Components (WCC)...
+
+============================================================
+WEAKLY CONNECTED COMPONENT (WCC) ANALYSIS
+============================================================
+Total Packages (Nodes):     700,035
+Total Components:           302,035
+------------------------------
+Giant Connected Component (GCC):
+  - Size: 395,779 packages
+  - Coverage: 56.54% of ecosystem
+------------------------------
+Fragmentation:
+  - Isolated Packages (Size=1): 300,720 (42.96%)
+  - 2nd Largest Component:      82
+============================================================
+
+[INFO] Writing outputs to objective2_connectivity_outputs...
+[INFO] Saved metrics report to objective2_connectivity_outputs/connectivity_metrics.json
+[INFO] Saved components CSV summary to objective2_connectivity_outputs/connected_components_summary.csv
+[INFO] Generated plots in objective2_connectivity_outputs
+[SUCCESS] Analysis Complete.
