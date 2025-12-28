@@ -1,0 +1,2663 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-12-28">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="LinkType" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="CommunityID" type="long" />
+    </attributes>
+    <nodes>
+      <node id="httpx" label="httpx">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="tqdm" label="tqdm">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="plotly" label="plotly">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="jupyter-server" label="jupyter-server">
+        <attvalues>
+          <attvalue for="0" value="54" />
+        </attvalues>
+      </node>
+      <node id="msgpack" label="msgpack">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sqlalchemy" label="sqlalchemy">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="gitpython" label="gitpython">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="prompt-toolkit" label="prompt-toolkit">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pydantic-settings" label="pydantic-settings">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="transformers" label="transformers">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="yarl" label="yarl">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="matplotlib" label="matplotlib">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="djangorestframework" label="djangorestframework">
+        <attvalues>
+          <attvalue for="0" value="101" />
+        </attvalues>
+      </node>
+      <node id="h5py" label="h5py">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="colorama" label="colorama">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="cycler" label="cycler">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="contextvars" label="contextvars">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="argparse" label="argparse">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="contourpy" label="contourpy">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="greenlet" label="greenlet">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pyyaml" label="pyyaml">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="tabulate" label="tabulate">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="uvicorn" label="uvicorn">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="h11" label="h11">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="marshmallow" label="marshmallow">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="wheel" label="wheel">
+        <attvalues>
+          <attvalue for="0" value="14" />
+        </attvalues>
+      </node>
+      <node id="importlib-resources" label="importlib-resources">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rich" label="rich">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="lxml" label="lxml">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="fastapi" label="fastapi">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="publication" label="publication">
+        <attvalues>
+          <attvalue for="0" value="22" />
+        </attvalues>
+      </node>
+      <node id="tensorflow" label="tensorflow">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="loguru" label="loguru">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="tzdata" label="tzdata">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="openpyxl" label="openpyxl">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="sympy" label="sympy">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="sphinx" label="sphinx">
+        <attvalues>
+          <attvalue for="0" value="10" />
+        </attvalues>
+      </node>
+      <node id="starlette" label="starlette">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="django" label="django">
+        <attvalues>
+          <attvalue for="0" value="101" />
+        </attvalues>
+      </node>
+      <node id="traitlets" label="traitlets">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="filelock" label="filelock">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fire" label="fire">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="future" label="future">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="charset-normalizer" label="charset-normalizer">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="bs4" label="bs4">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="pydantic-core" label="pydantic-core">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="httpcore" label="httpcore">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="typeguard" label="typeguard">
+        <attvalues>
+          <attvalue for="0" value="22" />
+        </attvalues>
+      </node>
+      <node id="google-auth" label="google-auth">
+        <attvalues>
+          <attvalue for="0" value="75" />
+        </attvalues>
+      </node>
+      <node id="asgiref" label="asgiref">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="networkx" label="networkx">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="paramiko" label="paramiko">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="opencv-python" label="opencv-python">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="pycryptodome" label="pycryptodome">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="watchdog" label="watchdog">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="pyserial" label="pyserial">
+        <attvalues>
+          <attvalue for="0" value="7" />
+        </attvalues>
+      </node>
+      <node id="tornado" label="tornado">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="zipp" label="zipp">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="setuptools" label="setuptools">
+        <attvalues>
+          <attvalue for="0" value="14" />
+        </attvalues>
+      </node>
+      <node id="propcache" label="propcache">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="wcwidth" label="wcwidth">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="fastmcp" label="fastmcp">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="pytz" label="pytz">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="annotated-types" label="annotated-types">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="wrapt" label="wrapt">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="sqlparse" label="sqlparse">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ipython" label="ipython">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="pandas" label="pandas">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="mcp" label="mcp">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="winrt-runtime" label="winrt-runtime">
+        <attvalues>
+          <attvalue for="0" value="7" />
+        </attvalues>
+      </node>
+      <node id="seaborn" label="seaborn">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="psutil" label="psutil">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="importlib-metadata" label="importlib-metadata">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="frozenlist" label="frozenlist">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cython" label="cython">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="et-xmlfile" label="et-xmlfile">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="scikit-learn" label="scikit-learn">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="flake8" label="flake8">
+        <attvalues>
+          <attvalue for="0" value="10" />
+        </attvalues>
+      </node>
+      <node id="pyqt5" label="pyqt5">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="anyio" label="anyio">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="markdown" label="markdown">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="ruamel-yaml" label="ruamel-yaml">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="psycopg2-binary" label="psycopg2-binary">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="toml" label="toml">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="pymongo" label="pymongo">
+        <attvalues>
+          <attvalue for="0" value="101" />
+        </attvalues>
+      </node>
+      <node id="streamlit" label="streamlit">
+        <attvalues>
+          <attvalue for="0" value="275" />
+        </attvalues>
+      </node>
+      <node id="huggingface-hub" label="huggingface-hub">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="jsii" label="jsii">
+        <attvalues>
+          <attvalue for="0" value="22" />
+        </attvalues>
+      </node>
+      <node id="beautifulsoup4" label="beautifulsoup4">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="redis" label="redis">
+        <attvalues>
+          <attvalue for="0" value="101" />
+        </attvalues>
+      </node>
+      <node id="fsspec" label="fsspec">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="tiktoken" label="tiktoken">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="requests" label="requests">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="xarray" label="xarray">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="websocket-client" label="websocket-client">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="certifi" label="certifi">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pyjwt" label="pyjwt">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="statsmodels" label="statsmodels">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="pygame" label="pygame">
+        <attvalues>
+          <attvalue for="0" value="5" />
+        </attvalues>
+      </node>
+      <node id="typer" label="typer">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="jsonschema" label="jsonschema">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="python-dateutil" label="python-dateutil">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="botocore" label="botocore">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="markdown-it-py" label="markdown-it-py">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="typing-inspection" label="typing-inspection">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="websockets" label="websockets">
+        <attvalues>
+          <attvalue for="0" value="3" />
+        </attvalues>
+      </node>
+      <node id="aiohttp" label="aiohttp">
+        <attvalues>
+          <attvalue for="0" value="3" />
+        </attvalues>
+      </node>
+      <node id="flask" label="flask">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="selenium" label="selenium">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="scipy" label="scipy">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="tenacity" label="tenacity">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="tomli" label="tomli">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="dnspython" label="dnspython">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="shapely" label="shapely">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="pyperclip" label="pyperclip">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="textual" label="textual">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="mkdocs" label="mkdocs">
+        <attvalues>
+          <attvalue for="0" value="10" />
+        </attvalues>
+      </node>
+      <node id="dataclasses" label="dataclasses">
+        <attvalues>
+          <attvalue for="0" value="18" />
+        </attvalues>
+      </node>
+      <node id="ipywidgets" label="ipywidgets">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="docopt" label="docopt">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="nltk" label="nltk">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="async-timeout" label="async-timeout">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pluggy" label="pluggy">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="langchain-core" label="langchain-core">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="pydantic" label="pydantic">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="urllib3" label="urllib3">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="polars" label="polars">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="smmap" label="smmap">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pytest" label="pytest">
+        <attvalues>
+          <attvalue for="0" value="10" />
+        </attvalues>
+      </node>
+      <node id="cryptography" label="cryptography">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pycparser" label="pycparser">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="kiwisolver" label="kiwisolver">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="rpds-py" label="rpds-py">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="typing-extensions" label="typing-extensions">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pygments" label="pygments">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="zope-interface" label="zope-interface">
+        <attvalues>
+          <attvalue for="0" value="14" />
+        </attvalues>
+      </node>
+      <node id="torch" label="torch">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="nonebot2" label="nonebot2">
+        <attvalues>
+          <attvalue for="0" value="5" />
+        </attvalues>
+      </node>
+      <node id="rsa" label="rsa">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pyobjc-core" label="pyobjc-core">
+        <attvalues>
+          <attvalue for="0" value="5" />
+        </attvalues>
+      </node>
+      <node id="pyasn1" label="pyasn1">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="threadpoolctl" label="threadpoolctl">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="cffi" label="cffi">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="odoo" label="odoo">
+        <attvalues>
+          <attvalue for="0" value="38" />
+        </attvalues>
+      </node>
+      <node id="werkzeug" label="werkzeug">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="nvidia-nvjitlink-cu12" label="nvidia-nvjitlink-cu12">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pyparsing" label="pyparsing">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="torchvision" label="torchvision">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="scikit-image" label="scikit-image">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="mpmath" label="mpmath">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="asyncio" label="asyncio">
+        <attvalues>
+          <attvalue for="0" value="3" />
+        </attvalues>
+      </node>
+      <node id="sniffio" label="sniffio">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="llama-index-core" label="llama-index-core">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="biopython" label="biopython">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="soupsieve" label="soupsieve">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pymysql" label="pymysql">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="regex" label="regex">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="opentelemetry-api" label="opentelemetry-api">
+        <attvalues>
+          <attvalue for="0" value="15" />
+        </attvalues>
+      </node>
+      <node id="termcolor" label="termcolor">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="docker" label="docker">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="jinja2" label="jinja2">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="referencing" label="referencing">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="mdurl" label="mdurl">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="astropy" label="astropy">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="packaging" label="packaging">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="orjson" label="orjson">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="xmltodict" label="xmltodict">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="markupsafe" label="markupsafe">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="six" label="six">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="spacy" label="spacy">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="joblib" label="joblib">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="shellingham" label="shellingham">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="attrs" label="attrs">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="appdirs" label="appdirs">
+        <attvalues>
+          <attvalue for="0" value="238" />
+        </attvalues>
+      </node>
+      <node id="click" label="click">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="cachetools" label="cachetools">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="aiofiles" label="aiofiles">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="chardet" label="chardet">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pillow" label="pillow">
+        <attvalues>
+          <attvalue for="0" value="5" />
+        </attvalues>
+      </node>
+      <node id="dill" label="dill">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="jmespath" label="jmespath">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="python-dotenv" label="python-dotenv">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="fonttools" label="fonttools">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="ruamel-yaml-clib" label="ruamel-yaml-clib">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="nvidia-cublas-cu12" label="nvidia-cublas-cu12">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="boto3" label="boto3">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="multidict" label="multidict">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="numba" label="numba">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="s3transfer" label="s3transfer">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="protobuf" label="protobuf">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="numpy" label="numpy">
+        <attvalues>
+          <attvalue for="0" value="6" />
+        </attvalues>
+      </node>
+      <node id="typing" label="typing">
+        <attvalues>
+          <attvalue for="0" value="194" />
+        </attvalues>
+      </node>
+      <node id="pywin32" label="pywin32">
+        <attvalues>
+          <attvalue for="0" value="5" />
+        </attvalues>
+      </node>
+      <node id="grpcio" label="grpcio">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="pyarrow" label="pyarrow">
+        <attvalues>
+          <attvalue for="0" value="9" />
+        </attvalues>
+      </node>
+      <node id="exceptiongroup" label="exceptiongroup">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="more-itertools" label="more-itertools">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="idna" label="idna">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+      <node id="openai" label="openai">
+        <attvalues>
+          <attvalue for="0" value="4" />
+        </attvalues>
+      </node>
+      <node id="platformdirs" label="platformdirs">
+        <attvalues>
+          <attvalue for="0" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="httpx" target="anyio" id="0">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="httpx" target="certifi" id="1">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="httpx" target="httpcore" id="2">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="httpx" target="idna" id="3">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tqdm" target="colorama" id="4">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="plotly" target="packaging" id="5">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="anyio" id="6">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="jinja2" id="7">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="packaging" id="8">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="tornado" id="9">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="traitlets" id="10">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jupyter-server" target="websocket-client" id="11">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sqlalchemy" target="greenlet" id="12">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sqlalchemy" target="importlib-metadata" id="13">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sqlalchemy" target="typing-extensions" id="14">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="gitpython" target="typing-extensions" id="15">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="prompt-toolkit" target="wcwidth" id="16">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic-settings" target="pydantic" id="17">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic-settings" target="python-dotenv" id="18">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic-settings" target="typing-inspection" id="19">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="filelock" id="20">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="huggingface-hub" id="21">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="numpy" id="22">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="packaging" id="23">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="pyyaml" id="24">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="regex" id="25">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="requests" id="26">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="transformers" target="tqdm" id="27">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="yarl" target="idna" id="28">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="yarl" target="multidict" id="29">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="yarl" target="propcache" id="30">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="contourpy" id="31">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="cycler" id="32">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="fonttools" id="33">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="kiwisolver" id="34">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="numpy" id="35">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="packaging" id="36">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="pillow" id="37">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="pyparsing" id="38">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="matplotlib" target="python-dateutil" id="39">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="djangorestframework" target="django" id="40">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="h5py" target="numpy" id="41">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="contourpy" target="numpy" id="42">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="uvicorn" target="click" id="43">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="uvicorn" target="h11" id="44">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="uvicorn" target="typing-extensions" id="45">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="marshmallow" target="typing-extensions" id="46">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="importlib-resources" target="zipp" id="47">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="rich" target="markdown-it-py" id="48">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="rich" target="pygments" id="49">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="fastapi" target="pydantic" id="50">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastapi" target="starlette" id="51">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastapi" target="typing-extensions" id="52">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="grpcio" id="53">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="h5py" id="54">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="numpy" id="55">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="packaging" id="56">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="protobuf" id="57">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="requests" id="58">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="setuptools" id="59">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="six" id="60">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="termcolor" id="61">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="typing-extensions" id="62">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tensorflow" target="wrapt" id="63">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="loguru" target="colorama" id="64">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="openpyxl" target="et-xmlfile" id="65">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sympy" target="mpmath" id="66">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sphinx" target="colorama" id="67">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sphinx" target="jinja2" id="68">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sphinx" target="packaging" id="69">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sphinx" target="pygments" id="70">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="sphinx" target="requests" id="71">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="starlette" target="anyio" id="72">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="starlette" target="typing-extensions" id="73">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="django" target="asgiref" id="74">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="django" target="sqlparse" id="75">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="django" target="tzdata" id="76">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="fire" target="termcolor" id="77">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="bs4" target="beautifulsoup4" id="78">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic-core" target="typing-extensions" id="79">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="httpcore" target="certifi" id="80">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="httpcore" target="h11" id="81">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="typeguard" target="importlib-metadata" id="82">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="typeguard" target="typing-extensions" id="83">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="google-auth" target="cachetools" id="84">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="google-auth" target="rsa" id="85">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="asgiref" target="typing-extensions" id="86">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="paramiko" target="cryptography" id="87">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="opencv-python" target="numpy" id="88">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="exceptiongroup" id="89">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="httpx" id="90">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="mcp" id="91">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="platformdirs" id="92">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="pydantic" id="93">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="pyperclip" id="94">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="python-dotenv" id="95">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="rich" id="96">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="uvicorn" id="97">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="fastmcp" target="websockets" id="98">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="annotated-types" target="typing-extensions" id="99">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="ipython" target="colorama" id="100">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="ipython" target="prompt-toolkit" id="101">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="ipython" target="pygments" id="102">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="ipython" target="traitlets" id="103">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="ipython" target="typing-extensions" id="104">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="numpy" id="105">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="python-dateutil" id="106">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="pytz" id="107">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pandas" target="tzdata" id="108">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="anyio" id="109">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="httpx" id="110">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="jsonschema" id="111">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="pydantic" id="112">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="pydantic-settings" id="113">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="pyjwt" id="114">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="pywin32" id="115">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="starlette" id="116">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="typing-extensions" id="117">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="typing-inspection" id="118">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mcp" target="uvicorn" id="119">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="winrt-runtime" target="typing-extensions" id="120">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="seaborn" target="matplotlib" id="121">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="seaborn" target="numpy" id="122">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="seaborn" target="pandas" id="123">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="importlib-metadata" target="typing-extensions" id="124">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="importlib-metadata" target="zipp" id="125">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-learn" target="joblib" id="126">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-learn" target="numpy" id="127">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-learn" target="scipy" id="128">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-learn" target="threadpoolctl" id="129">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="anyio" target="exceptiongroup" id="130">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="anyio" target="idna" id="131">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="anyio" target="sniffio" id="132">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="anyio" target="typing-extensions" id="133">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="ruamel-yaml" target="ruamel-yaml-clib" id="134">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pymongo" target="dnspython" id="135">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="cachetools" id="136">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="click" id="137">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="gitpython" id="138">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="numpy" id="139">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="packaging" id="140">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="pandas" id="141">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="pillow" id="142">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="protobuf" id="143">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="pyarrow" id="144">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="requests" id="145">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="tenacity" id="146">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="toml" id="147">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="tornado" id="148">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="typing-extensions" id="149">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="streamlit" target="watchdog" id="150">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="filelock" id="151">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="fsspec" id="152">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="httpx" id="153">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="packaging" id="154">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="pyyaml" id="155">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="shellingham" id="156">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="tqdm" id="157">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="huggingface-hub" target="typing-extensions" id="158">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="attrs" id="159">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="importlib-resources" id="160">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="publication" id="161">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="python-dateutil" id="162">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="typeguard" id="163">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="jsii" target="typing-extensions" id="164">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="beautifulsoup4" target="soupsieve" id="165">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="beautifulsoup4" target="typing-extensions" id="166">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="redis" target="async-timeout" id="167">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="tiktoken" target="regex" id="168">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="tiktoken" target="requests" id="169">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="requests" target="certifi" id="170">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="requests" target="charset-normalizer" id="171">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="requests" target="idna" id="172">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="requests" target="urllib3" id="173">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="xarray" target="numpy" id="174">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="xarray" target="packaging" id="175">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="xarray" target="pandas" id="176">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="statsmodels" target="numpy" id="177">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="statsmodels" target="packaging" id="178">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="statsmodels" target="pandas" id="179">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="statsmodels" target="scipy" id="180">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="typer" target="click" id="181">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="typer" target="rich" id="182">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="typer" target="shellingham" id="183">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="typer" target="typing-extensions" id="184">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jsonschema" target="attrs" id="185">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="jsonschema" target="referencing" id="186">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="jsonschema" target="rpds-py" id="187">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="python-dateutil" target="six" id="188">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="botocore" target="jmespath" id="189">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="botocore" target="python-dateutil" id="190">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="botocore" target="urllib3" id="191">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="markdown-it-py" target="mdurl" id="192">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="typing-inspection" target="typing-extensions" id="193">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="async-timeout" id="194">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="attrs" id="195">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="frozenlist" id="196">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="multidict" id="197">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="propcache" id="198">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="aiohttp" target="yarl" id="199">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="flask" target="click" id="200">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="flask" target="importlib-metadata" id="201">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="flask" target="jinja2" id="202">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="flask" target="markupsafe" id="203">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="flask" target="werkzeug" id="204">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="selenium" target="certifi" id="205">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="selenium" target="typing-extensions" id="206">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="selenium" target="urllib3" id="207">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="selenium" target="websocket-client" id="208">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="scipy" target="numpy" id="209">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="shapely" target="numpy" id="210">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="textual" target="markdown-it-py" id="211">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="textual" target="platformdirs" id="212">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="textual" target="pygments" id="213">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="textual" target="rich" id="214">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="textual" target="typing-extensions" id="215">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="click" id="216">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="colorama" id="217">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="importlib-metadata" id="218">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="jinja2" id="219">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="markdown" id="220">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="markupsafe" id="221">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="packaging" id="222">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="pyyaml" id="223">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="mkdocs" target="watchdog" id="224">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="ipywidgets" target="ipython" id="225">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="ipywidgets" target="traitlets" id="226">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nltk" target="click" id="227">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nltk" target="joblib" id="228">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nltk" target="regex" id="229">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="nltk" target="tqdm" id="230">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="langchain-core" target="packaging" id="231">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="langchain-core" target="pydantic" id="232">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="langchain-core" target="pyyaml" id="233">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="langchain-core" target="tenacity" id="234">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="langchain-core" target="typing-extensions" id="235">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic" target="annotated-types" id="236">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic" target="pydantic-core" id="237">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic" target="typing-extensions" id="238">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pydantic" target="typing-inspection" id="239">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="colorama" id="240">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="exceptiongroup" id="241">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="packaging" id="242">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="pluggy" id="243">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="pygments" id="244">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="pytest" target="tomli" id="245">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="cryptography" target="cffi" id="246">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="cryptography" target="typing-extensions" id="247">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="filelock" id="248">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="fsspec" id="249">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="jinja2" id="250">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="networkx" id="251">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="nvidia-cublas-cu12" id="252">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="nvidia-nvjitlink-cu12" id="253">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="setuptools" id="254">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="sympy" id="255">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torch" target="typing-extensions" id="256">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="anyio" id="257">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="exceptiongroup" id="258">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="loguru" id="259">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="pydantic" id="260">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="python-dotenv" id="261">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="tomli" id="262">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="typing-extensions" id="263">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="nonebot2" target="yarl" id="264">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="rsa" target="pyasn1" id="265">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="cffi" target="pycparser" id="266">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="werkzeug" target="markupsafe" id="267">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="torchvision" target="numpy" id="268">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torchvision" target="pillow" id="269">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="torchvision" target="torch" id="270">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-image" target="networkx" id="271">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-image" target="numpy" id="272">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-image" target="packaging" id="273">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-image" target="pillow" id="274">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="scikit-image" target="scipy" id="275">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="aiohttp" id="276">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="fsspec" id="277">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="httpx" id="278">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="networkx" id="279">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="nltk" id="280">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="numpy" id="281">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="pillow" id="282">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="platformdirs" id="283">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="pydantic" id="284">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="pyyaml" id="285">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="requests" id="286">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="setuptools" id="287">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="sqlalchemy" id="288">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="tenacity" id="289">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="tiktoken" id="290">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="tqdm" id="291">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="typing-extensions" id="292">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="llama-index-core" target="wrapt" id="293">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="biopython" target="numpy" id="294">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="opentelemetry-api" target="importlib-metadata" id="295">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="opentelemetry-api" target="typing-extensions" id="296">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="docker" target="pywin32" id="297">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="docker" target="requests" id="298">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="docker" target="urllib3" id="299">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="jinja2" target="markupsafe" id="300">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="referencing" target="attrs" id="301">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="referencing" target="rpds-py" id="302">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="referencing" target="typing-extensions" id="303">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="astropy" target="numpy" id="304">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="astropy" target="packaging" id="305">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="astropy" target="pyyaml" id="306">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="jinja2" id="307">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="numpy" id="308">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="packaging" id="309">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="pydantic" id="310">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="requests" id="311">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="setuptools" id="312">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="spacy" target="tqdm" id="313">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="click" target="colorama" id="314">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="boto3" target="botocore" id="315">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="boto3" target="jmespath" id="316">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="boto3" target="s3transfer" id="317">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="multidict" target="typing-extensions" id="318">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="numba" target="numpy" id="319">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="s3transfer" target="botocore" id="320">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="grpcio" target="typing-extensions" id="321">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="exceptiongroup" target="typing-extensions" id="322">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="anyio" id="323">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="httpx" id="324">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="pydantic" id="325">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="sniffio" id="326">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="tqdm" id="327">
+        <attvalues>
+          <attvalue for="1" value="Internal" />
+        </attvalues>
+      </edge>
+      <edge source="openai" target="typing-extensions" id="328">
+        <attvalues>
+          <attvalue for="1" value="Inter-Community" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

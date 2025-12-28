@@ -1,0 +1,40 @@
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 22:02:33
+Graph Name: Random Graph: random_graph_4.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2388
+Total Communities Found: 507
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 0): Size=22281 (5.60%)
+  Core Hubs: numpy, anndata, python-json-logger, langchain-anthropic, sqlglot, fabric, eventlet, jsonpointer
+Stack #2 (ID: 207): Size=20596 (5.18%)
+  Core Hubs: requests, types-requests, setuptools-scm, cvxpy, cerberus, wordcloud, pycocotools, ordered-set
+Stack #3 (ID: 29): Size=16442 (4.13%)
+  Core Hubs: pandas, google-cloud-bigquery, altair, parse, alibabacloud-rpc-util, pyttsx3, eth-utils, gtts
+Stack #4 (ID: 38): Size=12959 (3.26%)
+  Core Hubs: scipy, pytest-cov, bcrypt, pre-commit, elasticsearch, zope-interface, pynput, phonenumbers
+Stack #5 (ID: 145): Size=12278 (3.09%)
+  Core Hubs: pydantic, distro, pycryptodomex, rdflib, mdurl, exceptiongroup, pydot, ecdsa
+Stack #6 (ID: 9): Size=12258 (3.08%)
+  Core Hubs: pyyaml, platformdirs, unidecode, webdriver-manager, multiprocess, antlr4-python3-runtime, aenum, alibabacloud-openapi-util-py2
+Stack #7 (ID: 6): Size=11866 (2.98%)
+  Core Hubs: matplotlib, deprecated, natsort, msal, overrides, pynvml, imageio-ffmpeg, aioredis
+Stack #8 (ID: 27): Size=10882 (2.74%)
+  Core Hubs: click, tensorboard, jsonpickle, pysocks, sounddevice, ply, minio, uuid
+Stack #9 (ID: 32): Size=10149 (2.55%)
+  Core Hubs: scikit-learn, toml, cachetools, structlog, paho-mqtt, optuna, geopy, cookiecutter
+Stack #10 (ID: 48): Size=8657 (2.18%)
+  Core Hubs: tqdm, djangorestframework, feedparser, aws-cdk-core, authlib, aiodns, pypandoc, jsonpatch
+
+==================================================

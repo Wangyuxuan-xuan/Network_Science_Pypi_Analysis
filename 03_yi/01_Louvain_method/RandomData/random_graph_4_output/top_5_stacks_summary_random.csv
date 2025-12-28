@@ -1,0 +1,6 @@
+Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
+1,0,22281,5.60,"numpy, anndata, python-json-logger, langchain-anthropic, sqlglot, fabric, eventlet, jsonpointer"
+2,207,20596,5.18,"requests, types-requests, setuptools-scm, cvxpy, cerberus, wordcloud, pycocotools, ordered-set"
+3,29,16442,4.13,"pandas, google-cloud-bigquery, altair, parse, alibabacloud-rpc-util, pyttsx3, eth-utils, gtts"
+4,38,12959,3.26,"scipy, pytest-cov, bcrypt, pre-commit, elasticsearch, zope-interface, pynput, phonenumbers"
+5,145,12278,3.09,"pydantic, distro, pycryptodomex, rdflib, mdurl, exceptiongroup, pydot, ecdsa"

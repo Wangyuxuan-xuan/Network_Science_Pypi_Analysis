@@ -1,0 +1,40 @@
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 21:54:59
+Graph Name: Random Graph: random_graph_3.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2389
+Total Communities Found: 519
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 165): Size=22294 (5.60%)
+  Core Hubs: numpy, pyqtgraph, rfc3986, pdf2image, ftfy, parso, progress, gtts
+Stack #2 (ID: 138): Size=22118 (5.56%)
+  Core Hubs: requests, tzdata, omegaconf, nonebot-adapter-onebot, onnx, pybind11, dotenv, aiosignal
+Stack #3 (ID: 25): Size=17533 (4.41%)
+  Core Hubs: pandas, tensorboard, pycparser, mock, pynput, altair, alibabacloud-tea-util-py2, trimesh
+Stack #4 (ID: 17): Size=12471 (3.14%)
+  Core Hubs: pydantic, geopandas, zipp, requests-oauthlib, lark, ply, motor, langchain-anthropic
+Stack #5 (ID: 182): Size=12336 (3.10%)
+  Core Hubs: pyyaml, appdirs, djangorestframework, python-docx, celery, jsonpickle, httpcore, ase
+Stack #6 (ID: 0): Size=12281 (3.09%)
+  Core Hubs: scipy, python-slugify, dacite, frozenlist, twisted, opentelemetry-exporter-otlp, tensorflow-probability, trytond
+Stack #7 (ID: 43): Size=11640 (2.93%)
+  Core Hubs: matplotlib, pyautogui, fastcore, jsonpath-ng, antlr4-python3-runtime, gql, pygobject, argon2-cffi
+Stack #8 (ID: 27): Size=11580 (2.91%)
+  Core Hubs: click, xmltodict, pytest-cov, pylint, rapidfuzz, nbconvert, uuid, matplotlib-inline
+Stack #9 (ID: 201): Size=10364 (2.61%)
+  Core Hubs: tqdm, pyside6, pycryptodomex, python-jose, webdriver-manager, azure-storage-blob, safetensors, albumentations
+Stack #10 (ID: 15): Size=9443 (2.37%)
+  Core Hubs: odoo, aiofiles, anyio, watchdog, markdown-it-py, scanpy, tables, pynacl
+
+==================================================
