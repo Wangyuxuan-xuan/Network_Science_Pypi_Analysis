@@ -1,0 +1,177 @@
+================================================================================
+OBJECTIVE 4: ECOSYSTEM RESILIENCE ASSESSMENT
+PyPI Dependency Network - Network Science Project
+================================================================================
+
+Analysis Date: 2025-12-29 00:15:16
+Dataset: PyPI DAG (Ghosts Removed + Cycles Removed)
+Dataset Timestamp: 2025-11-24T21:37:12Z
+
+--------------------------------------------------------------------------------
+METHODOLOGY
+--------------------------------------------------------------------------------
+
+Targeted Node Removal Experiments with Cascade Failure Simulation:
+- Removed top-k nodes identified by centrality analysis (Objective 1)
+- Primary ranking metric: pagerank
+- Removal values tested: k = [1, 2, 3, 5, 10, 20, 50, 100, 200, 500]
+
+Cascade Failure Model:
+- When a package is removed, all packages that depend on it (directly or indirectly) also fail
+- This simulates real-world scenarios where removing a critical package (e.g., numpy)
+  causes all dependent packages to become non-functional
+- Cascade failures are computed by finding all reachable nodes in the reverse dependency graph
+
+Network Integrity Metrics:
+- Total failed nodes (initial removal + cascade failures)
+- Cascade failure count (additional failures beyond initial removal)
+- Largest Weakly Connected Component (LWCC) size
+- LWCC fraction of remaining nodes
+- Number of weakly connected components
+- Number of strongly connected components
+- Network density
+- Average shortest path length (when applicable)
+
+--------------------------------------------------------------------------------
+BASELINE NETWORK METRICS
+--------------------------------------------------------------------------------
+Total nodes: 397,797
+Total edges: 1,819,936
+LWCC size: 394,342
+LWCC fraction: 99.13%
+Weak components: 1320
+Strong components: 397797
+Density: 0.000012
+
+--------------------------------------------------------------------------------
+REMOVAL EXPERIMENT RESULTS (WITH CASCADE FAILURES)
+--------------------------------------------------------------------------------
+
+k      Total Failed    Cascade      LWCC Size       LWCC %     Retention %  Components  
+--------------------------------------------------------------------------------
+1.0    134,710.0       134,709.0    253,199.0       96.24%     64.21%       7,240.0     
+2.0    266,102.0       266,100.0    114,879.0       87.23%     29.13%       13,336.0    
+3.0    298,006.0       298,003.0    81,109.0        81.28%     20.57%       14,533.0    
+5.0    324,980.0       324,975.0    53,116.0        72.94%     13.47%       15,289.0    
+10.0   331,632.0       331,622.0    45,819.0        69.25%     11.62%       15,744.0    
+20.0   337,698.0       337,678.0    38,914.0        64.75%     9.87%        16,253.0    
+50.0   346,410.0       346,360.0    28,474.0        55.41%     7.22%        16,960.0    
+100.0  355,142.0       355,042.0    18,347.0        43.01%     4.65%        17,657.0    
+200.0  360,281.0       360,081.0    12,001.0        31.99%     3.04%        18,186.0    
+500.0  366,151.0       365,651.0    3,800.0         12.01%     0.96%        18,770.0    
+
+--------------------------------------------------------------------------------
+CRITICAL THRESHOLDS
+--------------------------------------------------------------------------------
+
+50% LWCC retention lost at k = 2.0
+  This means removing the top 2.0 most central packages
+  (causing 266,102.0 total failures including 266,100.0 cascade failures)
+  reduces the largest connected component to less than 50% of its original size.
+
+10% LWCC retention lost at k = 20.0
+  Severe fragmentation occurs after removing top 20.0 packages.
+  Total failures: 337,698.0 (including 337,678.0 cascade failures)
+
+Significant fragmentation (>100 components) at k = 1.0
+
+--------------------------------------------------------------------------------
+TOP 20 MOST CRITICAL PACKAGES
+--------------------------------------------------------------------------------
+
+Rank   Package                             PageRank       In-Degree 
+--------------------------------------------------------------------------------
+1      numpy                               0.0328631701   81,923    
+2      typing-extensions                   0.0313538728   15,444    
+3      requests                            0.0252830667   72,340    
+4      odoo                                0.0138352706   17,859    
+5      colorama                            0.0113942860   7,372     
+6      six                                 0.0108689420   9,643     
+7      pandas                              0.0103829330   53,306    
+8      click                               0.0075994866   27,115    
+9      pydantic                            0.0072520736   29,279    
+10     certifi                             0.0063801316   5,572     
+11     pyyaml                              0.0063637610   27,998    
+12     urllib3                             0.0062557439   9,868     
+13     idna                                0.0059786321   3,667     
+14     scipy                               0.0056136775   31,307    
+15     matplotlib                          0.0055623328   33,062    
+16     django                              0.0052091106   9,396     
+17     python-dateutil                     0.0049175005   11,772    
+18     charset-normalizer                  0.0042031366   2,541     
+19     pillow                              0.0041371258   16,440    
+20     tqdm                                0.0038073567   24,086    
+
+--------------------------------------------------------------------------------
+KEY FINDINGS
+--------------------------------------------------------------------------------
+
+1. Overall Resilience Score: 0.036
+   (Area under retention curve, normalized; higher = more resilient)
+
+2. Impact of Removing Top Package (with Cascade Failures):
+   - Initial removal: 1 package
+   - Total failed (cascade): 134,710.0 packages
+   - Cascade failures: 134,709.0 additional packages
+   - LWCC retention: 64.21%
+   - Components created: 7240.0
+   - Package: numpy
+   - Note: Removing numpy causes 134,709.0 dependent packages to fail
+
+3. Fragmentation Pattern:
+   - Maximum single-step retention drop: 35.08% at k = 2
+   - Pattern: Sudden fragmentation (cascade failure risk)
+
+--------------------------------------------------------------------------------
+NULL MODEL COMPARISON (OBJECTIVE 5 BASELINE)
+--------------------------------------------------------------------------------
+
+To validate that resilience findings are non-trivial, we compared the original network
+against 5 randomized null models.
+
+Randomized Graph Properties:
+- Preserve: degree sequence (in-degree and out-degree)
+- Preserve: DAG property (no cycles)
+- Preserve: topological order (depth/level hierarchy)
+- Randomize: edge connections (order-preserving edge swaps)
+
+Comparison Methodology:
+- Same removal strategy: top-k nodes by PageRank centrality
+- Same cascade failure model: all dependent packages fail
+- Same metrics: LWCC relative size (normalized by original graph size)
+- Averaged dataset across 5 randomized graphs
+
+Key Comparison Results:
+  - k=1: Original=63.65%, Null Model=19.30%, Difference=+44.35%
+  - k=5: Original=13.35%, Null Model=12.21%, Difference=+1.14%
+  - k=10: Original=11.52%, Null Model=9.61%, Difference=+1.91%
+  - k=20: Original=9.78%, Null Model=7.48%, Difference=+2.30%
+
+Interpretation:
+- If original network shows similar resilience to null model: findings may be
+  explained by general network topology (degree distribution, DAG structure)
+- If original network shows different resilience: findings reflect specific
+  structural properties of the PyPI dependency ecosystem
+
+--------------------------------------------------------------------------------
+OUTPUT FILES
+--------------------------------------------------------------------------------
+
+1. results/resilience_results.csv
+   - Complete dataset for all removal experiments
+
+2. results/null_model_results.csv
+   - Averaged dataset from randomized graphs
+
+4. resilience_summary.txt (this file)
+   - Comprehensive analysis summary
+
+5. results/resilience_analysis.png
+   - Visualization plots
+
+5. results/resilience_null_model_comparison.png
+   - Null model comparison plot (original vs randomized networks)
+
+================================================================================
+END OF SUMMARY
+================================================================================

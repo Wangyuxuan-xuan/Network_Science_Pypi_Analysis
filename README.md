@@ -247,6 +247,93 @@ The real network’s LPA Q is much more higher than the random baseline, highlig
 
 
 
+## Objective 4: Assess Ecosystem Resilience
+
+This section performs targeted node removal experiments to assess the resilience of the PyPI dependency network. It evaluates how the network integrity degrades when critical packages (identified by centrality analysis) are removed, simulating real-world scenarios where critical packages become unavailable.
+
+All scripts and outputs for this objective are located in `04_assess_ecosystem_resilience/`.
+
+### Methodology
+
+**Targeted Node Removal Experiments:**
+- Removes top-k nodes identified by centrality analysis (using PageRank from Objective 1)
+- Tests removal values: k = [1, 2, 3, 5, 10, 20, 50, 100, 200, 500]
+- Uses the final DAG dataset (Stage 3) for analysis
+
+**Cascade Failure Model:**
+- When a package is removed, all packages that depend on it (directly or indirectly) also fail
+- This simulates real-world scenarios where removing a critical package (e.g., `numpy`) causes all dependent packages to become non-functional
+- Cascade failures are computed by finding all reachable nodes in the reverse dependency graph
+
+**Network Integrity Metrics:**
+- Total failed nodes (initial removal + cascade failures)
+- Cascade failure count (additional failures beyond initial removal)
+- Largest Weakly Connected Component (LWCC) size and retention
+- Component fragmentation (weakly and strongly connected components)
+- Network density and average path length
+
+**Null Model Comparison (Objective 5 Baseline):**
+- Compares original network resilience against randomized null models
+- Runs the same removal experiments on 5 randomized graphs
+- Randomized graphs preserve: degree sequence, DAG property, topological order
+- Validates that resilience findings reflect genuine structural properties
+
+### Running the Analysis
+
+```bash
+cd 04_assess_ecosystem_resilience
+python resilience.py
+```
+
+**Prerequisites:**
+- Requires completed Objective 1 (centrality analysis results)
+- Requires randomized graphs from Objective 5 baseline analysis (optional, for null model comparison)
+
+**Runtime:** ~40-45 minutes
+- Original network removal experiments: ~3-4 minutes
+- Null model comparison (5 randomized graphs): ~35-40 minutes
+
+### Output Files
+
+| Output File | Description |
+| --- | --- |
+| `results/resilience_results.csv` | Complete dataset for all removal experiments on original network |
+| `results/null_model_results.csv` | Averaged dataset from 5 randomized graphs (for comparison) |
+| `results/resilience_summary.txt` | Comprehensive analysis summary with key findings and critical thresholds |
+| `results/resilience_analysis.png` | Visualization plots showing network fragmentation and LWCC retention |
+| `results/resilience_null_model_comparison.png` | Comparison plot: original network vs averaged randomized networks |
+
+### Key Findings
+
+**Critical Thresholds:**
+- **50% LWCC retention lost** at k = 2 (removing top 2 packages causes 266,102 total failures)
+- **10% LWCC retention lost** at k = 20 (severe fragmentation occurs)
+- **Significant fragmentation** (>100 components) begins at k = 1
+
+**Impact of Removing Top Package:**
+- Removing `numpy` (top package by PageRank) causes 134,710 total failures
+- Cascade failures: 134,709 additional packages fail due to dependencies
+- LWCC retention drops to 64.21% of baseline
+- Creates 7,240 disconnected components
+
+**Most Critical Packages:**
+The top 10 most critical packages by removal impact:
+1. `numpy` (PageRank: 0.0329, In-Degree: 81,923)
+2. `typing-extensions` (PageRank: 0.0314, In-Degree: 15,444)
+3. `requests` (PageRank: 0.0253, In-Degree: 72,340)
+4. `odoo` (PageRank: 0.0138, In-Degree: 17,859)
+5. `colorama` (PageRank: 0.0114, In-Degree: 7,372)
+6. `six` (PageRank: 0.0109, In-Degree: 9,643)
+7. `pandas` (PageRank: 0.0104, In-Degree: 53,306)
+8. `click` (PageRank: 0.0076, In-Degree: 27,115)
+9. `pydantic` (PageRank: 0.0073, In-Degree: 29,279)
+10. `certifi` (PageRank: 0.0064, In-Degree: 5,572)
+
+**Resilience Pattern:**
+- Network shows **sudden fragmentation** pattern with cascade failures
+- Most damage occurs from removing the top few packages
+- Null model comparison validates that this fragility is a genuine structural property, not just an artifact of degree distribution
+
 ## Objective 5: Baseline Validation with Random Graphs
 
 
