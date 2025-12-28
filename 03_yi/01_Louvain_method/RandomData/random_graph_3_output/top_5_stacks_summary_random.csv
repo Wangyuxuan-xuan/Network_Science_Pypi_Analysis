@@ -1,6 +1,0 @@
-Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
-1,165,22294,5.60,"numpy, pyqtgraph, rfc3986, pdf2image, ftfy, parso, progress, gtts"
-2,138,22118,5.56,"requests, tzdata, omegaconf, nonebot-adapter-onebot, onnx, pybind11, dotenv, aiosignal"
-3,25,17533,4.41,"pandas, tensorboard, pycparser, mock, pynput, altair, alibabacloud-tea-util-py2, trimesh"
-4,17,12471,3.14,"pydantic, geopandas, zipp, requests-oauthlib, lark, ply, motor, langchain-anthropic"
-5,182,12336,3.10,"pyyaml, appdirs, djangorestframework, python-docx, celery, jsonpickle, httpcore, ase"

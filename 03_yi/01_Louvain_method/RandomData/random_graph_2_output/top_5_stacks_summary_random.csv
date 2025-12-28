@@ -1,6 +1,0 @@
-Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
-1,27,21745,5.47,"numpy, mutagen, retry, rioxarray, eth-utils, langsmith, pythonnet, pure-eval"
-2,24,21013,5.28,"requests, python-slugify, pywavelets, pdfplumber, sly, setproctitle, eventlet, lazy-loader"
-3,6,17743,4.46,"pandas, anthropic, inquirer, docstring-parser, robotframework, folium, authlib, semantic-version"
-4,7,12197,3.07,"matplotlib, google-api-python-client, wrapt, google-auth-httplib2, nbconvert, alibabacloud-endpoint-util, kaleido, python-levenshtein"
-5,3,11884,2.99,"pyyaml, fire, pymupdf, aws-cdk-lib, pypdf, mkdocs, oauthlib, jaxlib"

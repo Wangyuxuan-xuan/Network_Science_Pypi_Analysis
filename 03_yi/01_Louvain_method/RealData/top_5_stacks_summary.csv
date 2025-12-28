@@ -1,6 +1,0 @@
-Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
-1,6,80618,20.27,"numpy, pandas, matplotlib, scipy, scikit-learn, seaborn, opencv-python, networkx"
-2,4,57375,14.42,"pydantic, tqdm, rich, torch, python-dotenv, httpx, typer, fastapi"
-3,194,47400,11.92,"pyyaml, click, jinja2, psutil, boto3, colorama, tabulate, toml"
-4,1,45894,11.54,"typing-extensions, python-dateutil, urllib3, six, flask, packaging, cryptography, pytz"
-5,238,43074,10.83,"requests, beautifulsoup4, lxml, selenium, bs4, appdirs, argparse, xmltodict"

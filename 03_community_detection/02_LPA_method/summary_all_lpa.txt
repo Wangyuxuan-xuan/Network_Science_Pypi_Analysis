@@ -1,0 +1,114 @@
+ANALYSIS SUMMARY (LPA Algorithm)
+=================================
+Modularity (Q): 0.1140
+Total Communities: 6214
+
+TOP 10 STACKS:
+Rank 1 (ID 0): Size 343387 (86.32%) - Hubs: numpy, typing-extensions, requests, colorama, six
+Rank 2 (ID 78): Size 18049 (4.54%) - Hubs: odoo, python-stdnum, odoo14-addon-ssi-transaction-mixin, openupgradelib, odoo14-addon-ssi-master-data-mixin
+Rank 3 (ID 2): Size 6265 (1.57%) - Hubs: django, djangorestframework, wagtail, django-cms, django-model-utils
+Rank 4 (ID 13): Size 1765 (0.44%) - Hubs: typeguard, publication, jsii, constructs, aws-cdk-lib
+Rank 5 (ID 54): Size 748 (0.19%) - Hubs: python-sdk-remote, octodns, shipyard-templates, ckantools, simplematch
+Rank 6 (ID 5): Size 666 (0.17%) - Hubs: zope-interface, zope-event, zope-component, zope, zope-schema
+Rank 7 (ID 193): Size 633 (0.16%) - Hubs: alibabacloud-tea-util, alibabacloud-tea-openapi, alibabacloud-endpoint-util, alibabacloud-openapi-util, alibabacloud-credentials
+Rank 8 (ID 802): Size 463 (0.12%) - Hubs: winrt-runtime, winrt-windows-ui-xaml, winui3-microsoft-ui-xaml, winrt-windows-ui-composition, winrt-windows-ui-xaml-media
+Rank 9 (ID 283): Size 411 (0.10%) - Hubs: alibabacloud-tea-util-py2, alibabacloud-tea-openapi-py2, alibabacloud-endpoint-util-py2, alibabacloud-openapi-util-py2, alibabacloud-tea-fileform-py2
+Rank 10 (ID 284): Size 384 (0.10%) - Hubs: alibabacloud-rpc-util, antchain-alipay-util, antchain-aitechguard, antchain-ak-2d01ff274c3448c2b919937512c80f91, antchain-ak-a3144b2bb72d485dba4479e94be6945d
+
+
+
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:33:27
+Modularity Score (Q): 0.0038
+Total Communities: 3131
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391165 (98.33%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 347): Size=19 (0.00%) -> Sample Nodes: ['mypy-boto3-shield', 'pluginregistry', 'wolfsoftware-drawlines', 'centimators', 'pytimbr-api']
+Stack #3 (ID: 229): Size=15 (0.00%) -> Sample Nodes: ['llshash-package', 'slurm-jupyter', 'libtorrent-windows-dll', 'altearnrpc', 'portage']
+Stack #4 (ID: 114): Size=8 (0.00%) -> Sample Nodes: ['gaussianmaster', 'divyanx-tokenizers', 'mypy-boto3-schemas', 'dc-jhub-jwtauthenticator', 'agora-api']
+Stack #5 (ID: 843): Size=8 (0.00%) -> Sample Nodes: ['odoo12-addon-report-qweb-element-page-visibility', 'django-submitify', 'virtualsketch', 'guillotina-asyncom', 'lecroyparser']
+Stack #6 (ID: 329): Size=6 (0.00%) -> Sample Nodes: ['maimai-cat', 'projc', 'pyiron-snippets', 'open-multicaller', 'argumentari']
+Stack #7 (ID: 1177): Size=6 (0.00%) -> Sample Nodes: ['odoo9-addon-record-archiver', 'eidolon-browser-service', 'teext', 'rrrelay', 'cvhero']
+Stack #8 (ID: 1636): Size=6 (0.00%) -> Sample Nodes: ['odoo12-addon-web-switch-context-warning', 'rofify', 'micropython-esp32-stubs', 'evotoolbox', 'iguana']
+Stack #9 (ID: 2089): Size=6 (0.00%) -> Sample Nodes: ['img2data', 'mseep-mcp-server-weaviate', 'odoo14-addon-agreement-serviceprofile', 'swarmk', 'pydantic-educacode']
+Stack #10 (ID: 225): Size=5 (0.00%) -> Sample Nodes: ['odoo-addon-website-sale-product-detail-attribute-value-image', 'pyfolio', 'geotechdata', 'image-padder', 'mockflow']
+
+
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:34:36
+Modularity Score (Q): 0.0035
+Total Communities: 2954
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391584 (98.44%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 264): Size=20 (0.01%) -> Sample Nodes: ['paymentech', 'imojify', 'langrocks', 'itk-cudacommon-cuda124', 'odoo12-addons-oca-stock-logistics-transport']
+Stack #3 (ID: 34): Size=18 (0.00%) -> Sample Nodes: ['cd-utils-logger', 'odoo10-addon-calendar-dst-bug-fix', 'mkbak-iterfzf', 'odoo11-addon-base-currency-iso-4217', 'paceval']
+Stack #4 (ID: 795): Size=18 (0.00%) -> Sample Nodes: ['cdo-local-uuid', 'fbgemm-gpu-nightly-cpu', 'texbox', 'pyblock', 'criminal-ip-test']
+Stack #5 (ID: 50): Size=17 (0.00%) -> Sample Nodes: ['acycling-digraph-problem', 'odoo11-addon-website-video-preview', 'django-multiurl', 'odoo11-addon-mrp-production-service', 'iflow-mcp-amazon-mcp']
+Stack #6 (ID: 996): Size=6 (0.00%) -> Sample Nodes: ['comfyui-utils', 'gaussfilter', 'odoo14-addon-hr-contract-currency', 'sliding1d', 'notifybot3']
+Stack #7 (ID: 1521): Size=6 (0.00%) -> Sample Nodes: ['jinja2-stringcase', 'oceandb-driver-interface', 'zoom-tormysql', 'topsis-vibhav-102003772', 'ecoact-access']
+Stack #8 (ID: 6): Size=5 (0.00%) -> Sample Nodes: ['mqtt-cli-subscriber', 'odoo-addon-web-environment-ribbon', 'argclz', 'python-rapidjson-schema', 'a-selenium-errorhandler']
+Stack #9 (ID: 169): Size=5 (0.00%) -> Sample Nodes: ['akamaihttp', 'selfw', 'galaxy-py-error', 'odoo9-addon-account-invoice-merge', 'sparse-cubes']
+Stack #10 (ID: 1153): Size=5 (0.00%) -> Sample Nodes: ['extras', 'readme-builder', 'novafitness-sds018', 'zpipe', 'tsabin']
+
+
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:35:29
+Modularity Score (Q): 0.0037
+Total Communities: 2990
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391409 (98.39%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 43): Size=84 (0.02%) -> Sample Nodes: ['odoo13-addon-purchase-line-procurement-group', 'dbt-cratedb', 'ldapsearchad', 'damv1myparamikossh', 'calendar-base']
+Stack #3 (ID: 8): Size=25 (0.01%) -> Sample Nodes: ['open-multicaller', 'mathlamp', 'odoo14-addon-account-payment-paired-internal-transfer', 'waqi-python', 'pypai']
+Stack #4 (ID: 5): Size=8 (0.00%) -> Sample Nodes: ['odoo11-addon-l10n-ro-partner-unique', 'odoo12-addon-l10n-it-ateco', 'python-isl', 'gepcat', 'sdf-cli']
+Stack #5 (ID: 627): Size=6 (0.00%) -> Sample Nodes: ['django-theme-academy', 'boto3-dataclass-opsworkscm', 'pyneng-quiz', 'polyrename', 'odoo13-addon-account-bank-statement-import-guess-partner']
+Stack #6 (ID: 853): Size=6 (0.00%) -> Sample Nodes: ['ea-toolkit', 'u0-stitcher', 'duckdi', 'openweave', 'chibi-auth0']
+Stack #7 (ID: 1544): Size=6 (0.00%) -> Sample Nodes: ['peaky', 'odoo-addon-membership-initial-fee', 'mortal-ini', 'everytime-parser', 'pypotd']
+Stack #8 (ID: 1550): Size=6 (0.00%) -> Sample Nodes: ['pay-attention-pipeline', 'odoo13-addon-res-company-code', 'odoo-addon-purchase-partner-selectable-option', 'odoo14-addon-stock-intercompany', 'pycufsm']
+Stack #9 (ID: 44): Size=5 (0.00%) -> Sample Nodes: ['pucktrick', 'sentileak', 's3prl', 'uname2', 'ac-auto']
+Stack #10 (ID: 65): Size=5 (0.00%) -> Sample Nodes: ['pyolap', 'llmtoolset', 'pynetcon', 'lkj', 'lcd-module']
+
+
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:37:19
+Modularity Score (Q): 0.0037
+Total Communities: 3022
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391301 (98.37%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 67): Size=103 (0.03%) -> Sample Nodes: ['configvault', 'orange-mcp-server-duckdb', 'axmlparserpy', 'odoo14-addon-mrp-subcontracting-inhibit', 'odoo11-addon-nsca-client']
+Stack #3 (ID: 221): Size=33 (0.01%) -> Sample Nodes: ['amuse-bse', 'peertable', 'avilla-twilight', 'password-generator', 'django-requests-cache']
+Stack #4 (ID: 527): Size=14 (0.00%) -> Sample Nodes: ['nstructanaly', 'odoo8-addon-product-variant-uos', 'warriorcloudshell', 'metricspaces', 'ocelot-desy']
+Stack #5 (ID: 781): Size=12 (0.00%) -> Sample Nodes: ['feanortempdir', 'gbq', 'spatialkappa', 'celery-amqp-backend', 'etcd3-wrapper']
+Stack #6 (ID: 1161): Size=10 (0.00%) -> Sample Nodes: ['odoo-addon-so-sequence-confirmed-order-base', 'galaxie-microgui', 'odoo11-addon-product-pricelist-direct-print', 'langchain-discord-shikenso', 'pysecret']
+Stack #7 (ID: 371): Size=8 (0.00%) -> Sample Nodes: ['odoo14-addon-sale-product-category-menu', 'emotional', 'asyncmongoengine', 'huaweicloudsdkiotda', 'odoo13-addon-project-parent']
+Stack #8 (ID: 411): Size=8 (0.00%) -> Sample Nodes: ['helloworldpy', 'karoosync', 'odoo-addon-res-company-mastodon-link', 'loopa', 'trigo']
+Stack #9 (ID: 95): Size=6 (0.00%) -> Sample Nodes: ['qugit-v2', 'bthlabs-jsonrpc-django', 'dotenvy', 'lrslib', 'locksys']
+Stack #10 (ID: 1669): Size=6 (0.00%) -> Sample Nodes: ['odoo12-addon-product-active-propagate', 'flask-feather', 'odoo14-addon-autovacuum-message-attachment', 'odoo11-addon-sale-report-delivered-subtotal', 'qtip-client-cli']
+
+
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:36:22
+Modularity Score (Q): 0.0037
+Total Communities: 2986
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391397 (98.39%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 5): Size=59 (0.01%) -> Sample Nodes: ['tinyscaler', 'iflow-mcp-alertmanager-mcp-server', 'rocketlogger', 'composio-agno', 'dynabuffers']
+Stack #3 (ID: 264): Size=16 (0.00%) -> Sample Nodes: ['prefect-openai', 'omni-authify', 'cloud-resource-matcher', 'odoo12-addon-stock-inventory-cost-info', 'purpleair-api']
+Stack #4 (ID: 458): Size=16 (0.00%) -> Sample Nodes: ['dapr-ext-grpc-dev', 'odoo10-addon-account-invoice-force-number', 'poseutils', 'ragaasfirstmoduletest', 'biogl']
+Stack #5 (ID: 1381): Size=12 (0.00%) -> Sample Nodes: ['odoo12-addon-stock-delivery-note', 'mimophys', 'odoo8-addon-hr-employee-age', 'sensu-plugin', 'odoo13-addon-base-action-visibility-restriction']
+Stack #6 (ID: 13): Size=10 (0.00%) -> Sample Nodes: ['telegram-agent-bot', 'odoo9-addon-purchase-date-planned-manual', 'odoo11-addon-runbot-subject-skip', 'status-symbol', 'obci-readmanager']
+Stack #7 (ID: 1237): Size=10 (0.00%) -> Sample Nodes: ['huaweicloudsdkcfw', 'nlptoolkit-namedentityrecognition-cy', 'nevermined-secret-store', 'gpkron', 'robotsindeklas-controller']
+Stack #8 (ID: 127): Size=8 (0.00%) -> Sample Nodes: ['angelsupport', 'odoo14-addon-remove-odoo-enterprise', 'undatasio', 'aiddl-external-ros2', 'odoo8-addon-stock-product-location-sorted-by-qty']
+Stack #9 (ID: 521): Size=8 (0.00%) -> Sample Nodes: ['odoo14-addon-pos-hide-banknote-button', 'odoo10-addon-stock-lot-note', 'reflex-plot', 'tencentcloud-sdk-python-asr', 'takamol-custom-library']
+Stack #10 (ID: 651): Size=6 (0.00%) -> Sample Nodes: ['odoo12-addon-stock-change-price-at-date', 'sharedtablebroker', 'tcat-gtfs-csv-validator', 'mypy-boto3-marketplace-deployment', 'octodns-cloudns']
+
+

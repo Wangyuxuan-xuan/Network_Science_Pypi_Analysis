@@ -1,0 +1,6 @@
+Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
+1,28,21840,5.49,"numpy, croniter, trio, astroquery, qdrant-client, mkdocs-material, opt-einsum, thefuzz"
+2,0,20447,5.14,"requests, base58, fastparquet, curl-cffi, evaluate, markdown2, mysqlclient, cairosvg"
+3,45,17431,4.38,"pandas, jmespath, dash, nonebot-adapter-onebot, pysocks, pyopengl, invoke, et-xmlfile"
+4,163,12217,3.07,"click, markdown, xgboost, pydub, isort, yt-dlp, moviepy, exceptiongroup"
+5,46,12026,3.02,"matplotlib, pathlib, babel, pytesseract, tables, google-genai, python-socketio, dacite"

@@ -1,6 +1,0 @@
-Stack #,Community ID,Size (Nodes),Share (%),Core Packages (Hubs)
-1,179,22418,5.64,"numpy, docstring-parser, wagtail, magicgui, diffusers, anytree, weasyprint, stevedore"
-2,22,21600,5.43,"requests, nest-asyncio, gymnasium, tomli-w, ftfy, snowflake-connector-python, whitenoise, evaluate"
-3,30,18724,4.71,"pandas, paramiko, gunicorn, pbr, pint, rsa, notebook, isort"
-4,33,12478,3.14,"scipy, pyperclip, tornado, prometheus-client, fonttools, pyqt6, absl-py, exceptiongroup"
-5,3,12307,3.09,"matplotlib, dataclasses, python-docx, elasticsearch, antlr4-python3-runtime, python-gitlab, pyvista, tensorboardx"

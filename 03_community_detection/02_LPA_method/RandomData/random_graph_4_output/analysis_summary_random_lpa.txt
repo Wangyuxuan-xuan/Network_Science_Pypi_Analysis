@@ -1,0 +1,17 @@
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:36:22
+Modularity Score (Q): 0.0037
+Total Communities: 2986
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391397 (98.39%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 5): Size=59 (0.01%) -> Sample Nodes: ['tinyscaler', 'iflow-mcp-alertmanager-mcp-server', 'rocketlogger', 'composio-agno', 'dynabuffers']
+Stack #3 (ID: 264): Size=16 (0.00%) -> Sample Nodes: ['prefect-openai', 'omni-authify', 'cloud-resource-matcher', 'odoo12-addon-stock-inventory-cost-info', 'purpleair-api']
+Stack #4 (ID: 458): Size=16 (0.00%) -> Sample Nodes: ['dapr-ext-grpc-dev', 'odoo10-addon-account-invoice-force-number', 'poseutils', 'ragaasfirstmoduletest', 'biogl']
+Stack #5 (ID: 1381): Size=12 (0.00%) -> Sample Nodes: ['odoo12-addon-stock-delivery-note', 'mimophys', 'odoo8-addon-hr-employee-age', 'sensu-plugin', 'odoo13-addon-base-action-visibility-restriction']
+Stack #6 (ID: 13): Size=10 (0.00%) -> Sample Nodes: ['telegram-agent-bot', 'odoo9-addon-purchase-date-planned-manual', 'odoo11-addon-runbot-subject-skip', 'status-symbol', 'obci-readmanager']
+Stack #7 (ID: 1237): Size=10 (0.00%) -> Sample Nodes: ['huaweicloudsdkcfw', 'nlptoolkit-namedentityrecognition-cy', 'nevermined-secret-store', 'gpkron', 'robotsindeklas-controller']
+Stack #8 (ID: 127): Size=8 (0.00%) -> Sample Nodes: ['angelsupport', 'odoo14-addon-remove-odoo-enterprise', 'undatasio', 'aiddl-external-ros2', 'odoo8-addon-stock-product-location-sorted-by-qty']
+Stack #9 (ID: 521): Size=8 (0.00%) -> Sample Nodes: ['odoo14-addon-pos-hide-banknote-button', 'odoo10-addon-stock-lot-note', 'reflex-plot', 'tencentcloud-sdk-python-asr', 'takamol-custom-library']
+Stack #10 (ID: 651): Size=6 (0.00%) -> Sample Nodes: ['odoo12-addon-stock-change-price-at-date', 'sharedtablebroker', 'tcat-gtfs-csv-validator', 'mypy-boto3-marketplace-deployment', 'octodns-cloudns']
