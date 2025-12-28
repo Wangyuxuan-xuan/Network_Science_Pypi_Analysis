@@ -1,0 +1,1 @@
+nohup python crawl_pypi_global.py > crawl.log 2>&1 &

@@ -1,0 +1,10 @@
+(base) yildomer@Omers-MacBook-Pro pypi_700k_crawler % python verify_dag.py pypi_dag
+[INFO] Verifying DAG integrity for: pypi_dag
+[INFO] Loading nodes...
+[INFO] Loading edges...
+[INFO] Graph loaded: 698,903 nodes, 1,819,937 edges
+[INFO] Running topological sort to verify DAG property...
+----------------------------------------
+[SUCCESS] The graph is a strict Directed Acyclic Graph (DAG).
+----------------------------------------
+(base) yildomer@Omers-MacBook-Pro pypi_700k_crawler % 

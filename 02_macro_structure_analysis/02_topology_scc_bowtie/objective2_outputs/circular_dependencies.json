@@ -1,0 +1,2373 @@
+{
+  "summary": {
+    "total_non_trivial_sccs": 263,
+    "total_nodes_involved": 787
+  },
+  "sccs": [
+    {
+      "scc_id": 757,
+      "node_count": 2,
+      "nodes": [
+        "markdownlit",
+        "streamlit-extras"
+      ]
+    },
+    {
+      "scc_id": 1678,
+      "node_count": 3,
+      "nodes": [
+        "gudory2",
+        "gudory",
+        "gudory1"
+      ]
+    },
+    {
+      "scc_id": 3434,
+      "node_count": 2,
+      "nodes": [
+        "haystack-ai",
+        "haystack-experimental"
+      ]
+    },
+    {
+      "scc_id": 3929,
+      "node_count": 2,
+      "nodes": [
+        "bluer-ai",
+        "bluer-objects"
+      ]
+    },
+    {
+      "scc_id": 4211,
+      "node_count": 2,
+      "nodes": [
+        "blue-objects",
+        "abcli"
+      ]
+    },
+    {
+      "scc_id": 5201,
+      "node_count": 2,
+      "nodes": [
+        "abutils",
+        "abstar"
+      ]
+    },
+    {
+      "scc_id": 5227,
+      "node_count": 2,
+      "nodes": [
+        "abstract-security",
+        "abstract-utilities"
+      ]
+    },
+    {
+      "scc_id": 5231,
+      "node_count": 2,
+      "nodes": [
+        "abstract-distances",
+        "abstract-pandas"
+      ]
+    },
+    {
+      "scc_id": 5278,
+      "node_count": 2,
+      "nodes": [
+        "abstract-flask",
+        "abstract-queries"
+      ]
+    },
+    {
+      "scc_id": 5329,
+      "node_count": 2,
+      "nodes": [
+        "abstract-solana",
+        "abstract-solcatcher"
+      ]
+    },
+    {
+      "scc_id": 5526,
+      "node_count": 5,
+      "nodes": [
+        "adafruit-circuitpython-requests",
+        "adafruit-circuitpython-connectionmanager",
+        "adafruit-circuitpython-busdevice",
+        "adafruit-circuitpython-typing",
+        "adafruit-blinka"
+      ]
+    },
+    {
+      "scc_id": 5837,
+      "node_count": 2,
+      "nodes": [
+        "multiformats",
+        "multiformats-config"
+      ]
+    },
+    {
+      "scc_id": 5863,
+      "node_count": 3,
+      "nodes": [
+        "acapy-mydata-did-protocol",
+        "dexa-protocol",
+        "dexa-sdk"
+      ]
+    },
+    {
+      "scc_id": 5879,
+      "node_count": 2,
+      "nodes": [
+        "mcp-common",
+        "acb"
+      ]
+    },
+    {
+      "scc_id": 5966,
+      "node_count": 8,
+      "nodes": [
+        "apache-airflow-providers-common-sql",
+        "apache-airflow",
+        "apache-airflow-providers-smtp",
+        "apache-airflow-providers-common-compat",
+        "apache-airflow-task-sdk",
+        "apache-airflow-providers-standard",
+        "apache-airflow-providers-common-io",
+        "apache-airflow-core"
+      ]
+    },
+    {
+      "scc_id": 6322,
+      "node_count": 4,
+      "nodes": [
+        "pop-loop",
+        "pop-config",
+        "pop",
+        "rend"
+      ]
+    },
+    {
+      "scc_id": 6417,
+      "node_count": 2,
+      "nodes": [
+        "dictionaryutils",
+        "gen3dictionary"
+      ]
+    },
+    {
+      "scc_id": 6419,
+      "node_count": 2,
+      "nodes": [
+        "pypfb",
+        "gen3"
+      ]
+    },
+    {
+      "scc_id": 6434,
+      "node_count": 2,
+      "nodes": [
+        "ullyses",
+        "hasp"
+      ]
+    },
+    {
+      "scc_id": 6581,
+      "node_count": 6,
+      "nodes": [
+        "aescipher",
+        "unencryptedsocket",
+        "encryptedsocket",
+        "easyrsa",
+        "threadwrapper",
+        "omnitools"
+      ]
+    },
+    {
+      "scc_id": 6850,
+      "node_count": 2,
+      "nodes": [
+        "jotdx",
+        "joconst"
+      ]
+    },
+    {
+      "scc_id": 7454,
+      "node_count": 2,
+      "nodes": [
+        "vuecore",
+        "acore"
+      ]
+    },
+    {
+      "scc_id": 7962,
+      "node_count": 3,
+      "nodes": [
+        "actinia-processing-lib",
+        "actinia-core",
+        "actinia-rest-lib"
+      ]
+    },
+    {
+      "scc_id": 7997,
+      "node_count": 3,
+      "nodes": [
+        "logger-local",
+        "language-remote",
+        "user-context-remote"
+      ]
+    },
+    {
+      "scc_id": 8000,
+      "node_count": 2,
+      "nodes": [
+        "database-mysql-local",
+        "sql-to-code-local"
+      ]
+    },
+    {
+      "scc_id": 8419,
+      "node_count": 2,
+      "nodes": [
+        "shinychat",
+        "shiny"
+      ]
+    },
+    {
+      "scc_id": 8596,
+      "node_count": 2,
+      "nodes": [
+        "adafruit-blinka-displayio",
+        "adafruit-circuitpython-bitmap-font"
+      ]
+    },
+    {
+      "scc_id": 9266,
+      "node_count": 2,
+      "nodes": [
+        "pylance",
+        "lance-namespace"
+      ]
+    },
+    {
+      "scc_id": 10132,
+      "node_count": 2,
+      "nodes": [
+        "adestis-netbox-certificate-management",
+        "adestis-netbox-applications"
+      ]
+    },
+    {
+      "scc_id": 12121,
+      "node_count": 2,
+      "nodes": [
+        "neuralfoil",
+        "aerosandbox"
+      ]
+    },
+    {
+      "scc_id": 13932,
+      "node_count": 2,
+      "nodes": [
+        "oletools",
+        "pcodedmp"
+      ]
+    },
+    {
+      "scc_id": 14783,
+      "node_count": 2,
+      "nodes": [
+        "pydebugger",
+        "licface"
+      ]
+    },
+    {
+      "scc_id": 15830,
+      "node_count": 2,
+      "nodes": [
+        "svc-infra",
+        "ai-infra"
+      ]
+    },
+    {
+      "scc_id": 17079,
+      "node_count": 2,
+      "nodes": [
+        "aiearth-engine",
+        "aie-sdk"
+      ]
+    },
+    {
+      "scc_id": 17521,
+      "node_count": 2,
+      "nodes": [
+        "shakenbreak",
+        "doped"
+      ]
+    },
+    {
+      "scc_id": 19622,
+      "node_count": 2,
+      "nodes": [
+        "unicon",
+        "unicon-plugins"
+      ]
+    },
+    {
+      "scc_id": 19632,
+      "node_count": 3,
+      "nodes": [
+        "genie-libs-clean",
+        "genie-libs-health",
+        "genie"
+      ]
+    },
+    {
+      "scc_id": 19639,
+      "node_count": 2,
+      "nodes": [
+        "pyats-topology",
+        "pyats-utils"
+      ]
+    },
+    {
+      "scc_id": 20332,
+      "node_count": 2,
+      "nodes": [
+        "vkbottle",
+        "vkbottle-types"
+      ]
+    },
+    {
+      "scc_id": 22521,
+      "node_count": 2,
+      "nodes": [
+        "contaix",
+        "aix"
+      ]
+    },
+    {
+      "scc_id": 29222,
+      "node_count": 2,
+      "nodes": [
+        "pennylane-lightning",
+        "pennylane"
+      ]
+    },
+    {
+      "scc_id": 29505,
+      "node_count": 2,
+      "nodes": [
+        "django-collect-offline-files",
+        "django-collect-offline"
+      ]
+    },
+    {
+      "scc_id": 29537,
+      "node_count": 7,
+      "nodes": [
+        "ambition-ae",
+        "ambition-metadata-rules",
+        "ambition-screening",
+        "ambition-subject",
+        "ambition-prn",
+        "ambition-lists",
+        "ambition-form-validators"
+      ]
+    },
+    {
+      "scc_id": 30086,
+      "node_count": 2,
+      "nodes": [
+        "amiyautils",
+        "amiyalog"
+      ]
+    },
+    {
+      "scc_id": 30316,
+      "node_count": 3,
+      "nodes": [
+        "nagata",
+        "camina",
+        "miller"
+      ]
+    },
+    {
+      "scc_id": 31160,
+      "node_count": 2,
+      "nodes": [
+        "db2-hj3415",
+        "chatgpt-hj3415"
+      ]
+    },
+    {
+      "scc_id": 31162,
+      "node_count": 2,
+      "nodes": [
+        "db-hj3415",
+        "scraper-hj3415"
+      ]
+    },
+    {
+      "scc_id": 33894,
+      "node_count": 2,
+      "nodes": [
+        "ansys-math-core",
+        "ansys-mapdl-core"
+      ]
+    },
+    {
+      "scc_id": 35428,
+      "node_count": 2,
+      "nodes": [
+        "teradatamlwidgets",
+        "teradataml"
+      ]
+    },
+    {
+      "scc_id": 35737,
+      "node_count": 5,
+      "nodes": [
+        "ut-dfr",
+        "ut-dic",
+        "ut-ioc",
+        "ut-obj",
+        "ut-log"
+      ]
+    },
+    {
+      "scc_id": 37455,
+      "node_count": 6,
+      "nodes": [
+        "uiutil",
+        "configurationutil",
+        "stateutil",
+        "classutils",
+        "tableutil",
+        "fdutil"
+      ]
+    },
+    {
+      "scc_id": 37457,
+      "node_count": 3,
+      "nodes": [
+        "apiutil",
+        "networkutil",
+        "pydnserver"
+      ]
+    },
+    {
+      "scc_id": 38599,
+      "node_count": 2,
+      "nodes": [
+        "mond",
+        "applique"
+      ]
+    },
+    {
+      "scc_id": 39575,
+      "node_count": 11,
+      "nodes": [
+        "ecov002-cmr",
+        "sentinel-tiles",
+        "daylight-evapotranspiration",
+        "ecov002-granules",
+        "rasters",
+        "check-distribution",
+        "verma-net-radiation",
+        "solar-apparent-time",
+        "sun-angles",
+        "ecov002-calval-tables",
+        "geos5fp"
+      ]
+    },
+    {
+      "scc_id": 41626,
+      "node_count": 4,
+      "nodes": [
+        "pathier",
+        "loggi",
+        "noiftimer",
+        "printbuddies"
+      ]
+    },
+    {
+      "scc_id": 43232,
+      "node_count": 2,
+      "nodes": [
+        "mwxml",
+        "mwcli"
+      ]
+    },
+    {
+      "scc_id": 49054,
+      "node_count": 2,
+      "nodes": [
+        "dkinst",
+        "atomicshop"
+      ]
+    },
+    {
+      "scc_id": 49653,
+      "node_count": 2,
+      "nodes": [
+        "peppy",
+        "pephubclient"
+      ]
+    },
+    {
+      "scc_id": 50668,
+      "node_count": 2,
+      "nodes": [
+        "paper-qa-pypdf",
+        "paper-qa"
+      ]
+    },
+    {
+      "scc_id": 51019,
+      "node_count": 2,
+      "nodes": [
+        "authed",
+        "authed-mcp"
+      ]
+    },
+    {
+      "scc_id": 51604,
+      "node_count": 5,
+      "nodes": [
+        "rename-lock",
+        "ezpip",
+        "sout",
+        "json-stock",
+        "fies"
+      ]
+    },
+    {
+      "scc_id": 51703,
+      "node_count": 2,
+      "nodes": [
+        "nb-libs",
+        "nb-log"
+      ]
+    },
+    {
+      "scc_id": 53541,
+      "node_count": 2,
+      "nodes": [
+        "httpdis",
+        "sonicprobe"
+      ]
+    },
+    {
+      "scc_id": 56560,
+      "node_count": 3,
+      "nodes": [
+        "aws-s3-controller",
+        "shining-pebbles",
+        "string-date-controller"
+      ]
+    },
+    {
+      "scc_id": 59580,
+      "node_count": 3,
+      "nodes": [
+        "backend-ai-logging",
+        "backend-ai-common",
+        "backend-ai-plugin"
+      ]
+    },
+    {
+      "scc_id": 59657,
+      "node_count": 5,
+      "nodes": [
+        "stheno",
+        "varz",
+        "wbml",
+        "mlkernels",
+        "backends-matrix"
+      ]
+    },
+    {
+      "scc_id": 61773,
+      "node_count": 2,
+      "nodes": [
+        "jetts-tools",
+        "barb"
+      ]
+    },
+    {
+      "scc_id": 62918,
+      "node_count": 2,
+      "nodes": [
+        "extra-utils",
+        "basic-type-operations"
+      ]
+    },
+    {
+      "scc_id": 64027,
+      "node_count": 2,
+      "nodes": [
+        "bb-apputils",
+        "bb-pycodeview"
+      ]
+    },
+    {
+      "scc_id": 65988,
+      "node_count": 2,
+      "nodes": [
+        "pymodaq",
+        "pymodaq-plugins-mock"
+      ]
+    },
+    {
+      "scc_id": 66411,
+      "node_count": 2,
+      "nodes": [
+        "behavex",
+        "behavex-images"
+      ]
+    },
+    {
+      "scc_id": 66995,
+      "node_count": 3,
+      "nodes": [
+        "wetlab",
+        "lamindb",
+        "bionty"
+      ]
+    },
+    {
+      "scc_id": 68267,
+      "node_count": 2,
+      "nodes": [
+        "bfgdealer",
+        "bfgbidding"
+      ]
+    },
+    {
+      "scc_id": 68550,
+      "node_count": 2,
+      "nodes": [
+        "webint",
+        "bgq"
+      ]
+    },
+    {
+      "scc_id": 69293,
+      "node_count": 2,
+      "nodes": [
+        "bidsphysio-physio2bids",
+        "bidsphysio"
+      ]
+    },
+    {
+      "scc_id": 70265,
+      "node_count": 3,
+      "nodes": [
+        "binalyzer",
+        "binalyzer-wasm",
+        "binalyzer-rest"
+      ]
+    },
+    {
+      "scc_id": 71747,
+      "node_count": 7,
+      "nodes": [
+        "pyppl-echo",
+        "pyppl-strict",
+        "pyppl",
+        "pyppl-lock",
+        "pyppl-rich",
+        "pyppl-runners",
+        "pyppl-export"
+      ]
+    },
+    {
+      "scc_id": 72331,
+      "node_count": 2,
+      "nodes": [
+        "bisos-b",
+        "bisos-basics"
+      ]
+    },
+    {
+      "scc_id": 72332,
+      "node_count": 20,
+      "nodes": [
+        "bisos-platform",
+        "bisos-bpo",
+        "bisos-currents",
+        "bisos-cntnr",
+        "bisos-pals",
+        "bisos-common",
+        "bisos-debian",
+        "bisos-capability",
+        "bisos-marmee",
+        "bisos-usgacct",
+        "bisos-banna",
+        "bisos-sites",
+        "bisos-crypt",
+        "bisos-qmail",
+        "bisos-sbom",
+        "bisos-regfps",
+        "bisos-csplayer",
+        "bisos-siteregistrars",
+        "bisos-binsprep",
+        "bisos-facter"
+      ]
+    },
+    {
+      "scc_id": 73297,
+      "node_count": 2,
+      "nodes": [
+        "bpyth",
+        "blab"
+      ]
+    },
+    {
+      "scc_id": 75661,
+      "node_count": 4,
+      "nodes": [
+        "bluewhale-widget-base",
+        "bluewhale-canvas-core",
+        "bluewhale3-bluewhale",
+        "bluewhale3"
+      ]
+    },
+    {
+      "scc_id": 77855,
+      "node_count": 2,
+      "nodes": [
+        "boostaug",
+        "pyabsa"
+      ]
+    },
+    {
+      "scc_id": 81273,
+      "node_count": 2,
+      "nodes": [
+        "bptf",
+        "tf2-utils"
+      ]
+    },
+    {
+      "scc_id": 82062,
+      "node_count": 2,
+      "nodes": [
+        "brasil-gov-portal",
+        "brasil-gov-temas"
+      ]
+    },
+    {
+      "scc_id": 91327,
+      "node_count": 2,
+      "nodes": [
+        "system-logger-tool",
+        "system-config-tool"
+      ]
+    },
+    {
+      "scc_id": 91519,
+      "node_count": 9,
+      "nodes": [
+        "web3-p",
+        "web313",
+        "web3-pp",
+        "web3-da1",
+        "web3a",
+        "web3-cut",
+        "web3-through",
+        "stamwqr",
+        "web3dd"
+      ]
+    },
+    {
+      "scc_id": 92059,
+      "node_count": 2,
+      "nodes": [
+        "caped-ai-mtrack",
+        "caped-ai"
+      ]
+    },
+    {
+      "scc_id": 93978,
+      "node_count": 2,
+      "nodes": [
+        "jupyter-cassini-server",
+        "cassini"
+      ]
+    },
+    {
+      "scc_id": 94333,
+      "node_count": 2,
+      "nodes": [
+        "sapphire",
+        "catbus"
+      ]
+    },
+    {
+      "scc_id": 94851,
+      "node_count": 2,
+      "nodes": [
+        "kedro",
+        "kedro-telemetry"
+      ]
+    },
+    {
+      "scc_id": 97076,
+      "node_count": 2,
+      "nodes": [
+        "cdpchaostoolkit",
+        "vztcdpchaos-slack"
+      ]
+    },
+    {
+      "scc_id": 98629,
+      "node_count": 2,
+      "nodes": [
+        "cerebral",
+        "metallurgy"
+      ]
+    },
+    {
+      "scc_id": 99831,
+      "node_count": 8,
+      "nodes": [
+        "shps",
+        "veux",
+        "xara",
+        "quakeio",
+        "sees",
+        "openbim",
+        "opensees",
+        "xsection"
+      ]
+    },
+    {
+      "scc_id": 99832,
+      "node_count": 2,
+      "nodes": [
+        "sdof",
+        "mdof"
+      ]
+    },
+    {
+      "scc_id": 102893,
+      "node_count": 9,
+      "nodes": [
+        "cho-check-os-ver",
+        "hj-check-os-version",
+        "nunininu-check-os-ver",
+        "seo-check-os-version",
+        "jacob-os-version-check",
+        "lucas-check-os-ver",
+        "check-os-ver",
+        "stundrg-check-os-ver",
+        "ppabam-check-os-ver"
+      ]
+    },
+    {
+      "scc_id": 103588,
+      "node_count": 2,
+      "nodes": [
+        "unimod-mapper",
+        "chemical-composition"
+      ]
+    },
+    {
+      "scc_id": 103646,
+      "node_count": 6,
+      "nodes": [
+        "pyserials",
+        "exceptionman",
+        "jsonschemata",
+        "pybadger",
+        "mdit",
+        "pylinks"
+      ]
+    },
+    {
+      "scc_id": 108369,
+      "node_count": 2,
+      "nodes": [
+        "clarifai-protocol",
+        "clarifai"
+      ]
+    },
+    {
+      "scc_id": 109067,
+      "node_count": 2,
+      "nodes": [
+        "linglit",
+        "pyglottolog"
+      ]
+    },
+    {
+      "scc_id": 114964,
+      "node_count": 2,
+      "nodes": [
+        "coastal-resilience-utilities",
+        "geospatial-analysis-environment"
+      ]
+    },
+    {
+      "scc_id": 119637,
+      "node_count": 2,
+      "nodes": [
+        "pycollector",
+        "heyvi"
+      ]
+    },
+    {
+      "scc_id": 124445,
+      "node_count": 2,
+      "nodes": [
+        "connection-helper",
+        "pandas-plots"
+      ]
+    },
+    {
+      "scc_id": 124505,
+      "node_count": 2,
+      "nodes": [
+        "sofima",
+        "connectomics"
+      ]
+    },
+    {
+      "scc_id": 127376,
+      "node_count": 2,
+      "nodes": [
+        "core-commands",
+        "core-scripts"
+      ]
+    },
+    {
+      "scc_id": 129845,
+      "node_count": 2,
+      "nodes": [
+        "sdfest",
+        "cpas-toolbox"
+      ]
+    },
+    {
+      "scc_id": 130699,
+      "node_count": 2,
+      "nodes": [
+        "crackerjack",
+        "session-mgmt-mcp"
+      ]
+    },
+    {
+      "scc_id": 132011,
+      "node_count": 2,
+      "nodes": [
+        "pycomputer",
+        "criminalusmoduleskernel"
+      ]
+    },
+    {
+      "scc_id": 132206,
+      "node_count": 2,
+      "nodes": [
+        "opensearch-local",
+        "event-local"
+      ]
+    },
+    {
+      "scc_id": 133574,
+      "node_count": 4,
+      "nodes": [
+        "cryptocom-agent-plugin-telegram",
+        "cryptocom-agent-plugin-discord",
+        "cryptocom-agent-plugin-sqlite",
+        "cryptocom-agent-client"
+      ]
+    },
+    {
+      "scc_id": 135041,
+      "node_count": 2,
+      "nodes": [
+        "csspin-frontend",
+        "csspin-ce"
+      ]
+    },
+    {
+      "scc_id": 135745,
+      "node_count": 2,
+      "nodes": [
+        "nmesh",
+        "pmeshlab"
+      ]
+    },
+    {
+      "scc_id": 137853,
+      "node_count": 2,
+      "nodes": [
+        "ipapython",
+        "ipaplatform"
+      ]
+    },
+    {
+      "scc_id": 138203,
+      "node_count": 2,
+      "nodes": [
+        "customized-table",
+        "help-generator"
+      ]
+    },
+    {
+      "scc_id": 139306,
+      "node_count": 2,
+      "nodes": [
+        "d8s-strings",
+        "d8s-math"
+      ]
+    },
+    {
+      "scc_id": 139658,
+      "node_count": 2,
+      "nodes": [
+        "cyclic-b",
+        "cyclic-a"
+      ]
+    },
+    {
+      "scc_id": 140353,
+      "node_count": 2,
+      "nodes": [
+        "rs-czsc",
+        "czsc"
+      ]
+    },
+    {
+      "scc_id": 140685,
+      "node_count": 2,
+      "nodes": [
+        "d8s-urls",
+        "d8s-domains"
+      ]
+    },
+    {
+      "scc_id": 143352,
+      "node_count": 2,
+      "nodes": [
+        "rinoh-typeface-dejavuserif",
+        "rinohtype"
+      ]
+    },
+    {
+      "scc_id": 147668,
+      "node_count": 2,
+      "nodes": [
+        "ddate",
+        "dateandtime"
+      ]
+    },
+    {
+      "scc_id": 153988,
+      "node_count": 2,
+      "nodes": [
+        "seq2annotation",
+        "deliverable-model"
+      ]
+    },
+    {
+      "scc_id": 154199,
+      "node_count": 2,
+      "nodes": [
+        "deltaprocessor",
+        "nvnc"
+      ]
+    },
+    {
+      "scc_id": 155038,
+      "node_count": 81,
+      "nodes": [
+        "square-6-2",
+        "square-4-8",
+        "square-1-7",
+        "square-3-5",
+        "square-3-0",
+        "square-8-3",
+        "square-2-4",
+        "square-8-6",
+        "square-1-8",
+        "square-5-0",
+        "square-8-8",
+        "square-6-7",
+        "square-4-0",
+        "square-7-6",
+        "square-4-3",
+        "square-7-3",
+        "square-1-5",
+        "square-0-4",
+        "square-7-1",
+        "square-8-0",
+        "square-2-6",
+        "square-2-3",
+        "square-3-2",
+        "square-4-5",
+        "square-8-4",
+        "square-7-7",
+        "square-7-5",
+        "square-0-2",
+        "square-0-6",
+        "square-1-3",
+        "square-8-1",
+        "square-6-0",
+        "square-6-6",
+        "square-1-1",
+        "square-3-1",
+        "square-2-2",
+        "square-0-5",
+        "square-2-7",
+        "square-2-0",
+        "square-0-0",
+        "square-6-4",
+        "square-5-7",
+        "square-1-0",
+        "square-1-4",
+        "square-4-7",
+        "square-1-6",
+        "square-4-6",
+        "square-7-8",
+        "square-2-5",
+        "square-6-5",
+        "square-7-0",
+        "square-0-3",
+        "square-5-8",
+        "square-6-8",
+        "square-5-1",
+        "square-5-6",
+        "square-7-4",
+        "square-5-2",
+        "square-1-2",
+        "square-2-8",
+        "square-4-2",
+        "square-5-3",
+        "square-3-7",
+        "square-8-5",
+        "square-4-1",
+        "square-0-8",
+        "square-3-4",
+        "square-4-4",
+        "square-7-2",
+        "square-8-2",
+        "square-8-7",
+        "square-3-3",
+        "square-2-1",
+        "square-3-6",
+        "square-6-3",
+        "square-5-5",
+        "square-0-1",
+        "square-6-1",
+        "square-0-7",
+        "square-5-4",
+        "square-3-8"
+      ]
+    },
+    {
+      "scc_id": 155757,
+      "node_count": 2,
+      "nodes": [
+        "vnstock-ezchart",
+        "vnstock"
+      ]
+    },
+    {
+      "scc_id": 157511,
+      "node_count": 2,
+      "nodes": [
+        "dffrntlab-tc-prometheus",
+        "dffrntlab-thumbor"
+      ]
+    },
+    {
+      "scc_id": 158446,
+      "node_count": 4,
+      "nodes": [
+        "message-local",
+        "smartlink-remote-restapi",
+        "smartlink-local",
+        "variable-local"
+      ]
+    },
+    {
+      "scc_id": 158718,
+      "node_count": 2,
+      "nodes": [
+        "dicergirl-plugin-coc",
+        "dicergirl"
+      ]
+    },
+    {
+      "scc_id": 160354,
+      "node_count": 2,
+      "nodes": [
+        "dimed-2",
+        "dimed"
+      ]
+    },
+    {
+      "scc_id": 162077,
+      "node_count": 2,
+      "nodes": [
+        "poort",
+        "disinfect"
+      ]
+    },
+    {
+      "scc_id": 178931,
+      "node_count": 2,
+      "nodes": [
+        "tango-photos",
+        "tango-articles"
+      ]
+    },
+    {
+      "scc_id": 182260,
+      "node_count": 2,
+      "nodes": [
+        "djseong-test-foo",
+        "djseong-test-bar"
+      ]
+    },
+    {
+      "scc_id": 183876,
+      "node_count": 10,
+      "nodes": [
+        "package-tea-hanyan",
+        "dnspod-domain-log",
+        "package-tea-one",
+        "package-tea-six",
+        "restful-dnspod-log",
+        "package-tea-three",
+        "package-tea-five",
+        "package-tea-seven",
+        "package-tea-two",
+        "package-tea-four"
+      ]
+    },
+    {
+      "scc_id": 188419,
+      "node_count": 3,
+      "nodes": [
+        "dpt-logging",
+        "dpt-module-loader",
+        "dpt-threading"
+      ]
+    },
+    {
+      "scc_id": 189182,
+      "node_count": 2,
+      "nodes": [
+        "rigging",
+        "dreadnode"
+      ]
+    },
+    {
+      "scc_id": 191997,
+      "node_count": 2,
+      "nodes": [
+        "dsxindexer",
+        "dsxquant"
+      ]
+    },
+    {
+      "scc_id": 192219,
+      "node_count": 2,
+      "nodes": [
+        "dtlpymetrics",
+        "dtlpy"
+      ]
+    },
+    {
+      "scc_id": 192582,
+      "node_count": 2,
+      "nodes": [
+        "taginfo",
+        "osm-bot-abstraction-layer"
+      ]
+    },
+    {
+      "scc_id": 192926,
+      "node_count": 3,
+      "nodes": [
+        "fans",
+        "fansauth",
+        "duf"
+      ]
+    },
+    {
+      "scc_id": 198311,
+      "node_count": 2,
+      "nodes": [
+        "phyaat",
+        "spkit"
+      ]
+    },
+    {
+      "scc_id": 207678,
+      "node_count": 2,
+      "nodes": [
+        "epix",
+        "wfsim"
+      ]
+    },
+    {
+      "scc_id": 208852,
+      "node_count": 2,
+      "nodes": [
+        "xtgeoviz",
+        "xtgeo"
+      ]
+    },
+    {
+      "scc_id": 209337,
+      "node_count": 2,
+      "nodes": [
+        "xler8",
+        "turbocore"
+      ]
+    },
+    {
+      "scc_id": 214785,
+      "node_count": 2,
+      "nodes": [
+        "exosims",
+        "exo-det-box"
+      ]
+    },
+    {
+      "scc_id": 215396,
+      "node_count": 2,
+      "nodes": [
+        "exploitfarm",
+        "xfarm"
+      ]
+    },
+    {
+      "scc_id": 215817,
+      "node_count": 2,
+      "nodes": [
+        "jztools",
+        "xerializer"
+      ]
+    },
+    {
+      "scc_id": 217491,
+      "node_count": 2,
+      "nodes": [
+        "fabrial-core-plugins",
+        "fabrial"
+      ]
+    },
+    {
+      "scc_id": 221615,
+      "node_count": 2,
+      "nodes": [
+        "toomanyconfigs",
+        "p2d2"
+      ]
+    },
+    {
+      "scc_id": 222280,
+      "node_count": 2,
+      "nodes": [
+        "fastopic",
+        "topmost"
+      ]
+    },
+    {
+      "scc_id": 225748,
+      "node_count": 2,
+      "nodes": [
+        "fgex",
+        "firegex"
+      ]
+    },
+    {
+      "scc_id": 227449,
+      "node_count": 2,
+      "nodes": [
+        "filewise",
+        "pygenutils"
+      ]
+    },
+    {
+      "scc_id": 228868,
+      "node_count": 2,
+      "nodes": [
+        "qore-client",
+        "finter"
+      ]
+    },
+    {
+      "scc_id": 233971,
+      "node_count": 3,
+      "nodes": [
+        "flaskbb-plugin-portal",
+        "flaskbb-plugin-conversations",
+        "flaskbb"
+      ]
+    },
+    {
+      "scc_id": 234485,
+      "node_count": 2,
+      "nodes": [
+        "flet-contribute",
+        "flet-contrib-cli"
+      ]
+    },
+    {
+      "scc_id": 234490,
+      "node_count": 4,
+      "nodes": [
+        "flet-contrive-web",
+        "flet-contributive",
+        "flet-contrive-desktop",
+        "flet-contrive-cli"
+      ]
+    },
+    {
+      "scc_id": 234493,
+      "node_count": 2,
+      "nodes": [
+        "flet-contributibe",
+        "flet-contribe-web"
+      ]
+    },
+    {
+      "scc_id": 235833,
+      "node_count": 2,
+      "nodes": [
+        "waveglow",
+        "tacotron2"
+      ]
+    },
+    {
+      "scc_id": 237458,
+      "node_count": 2,
+      "nodes": [
+        "foliantcontrib-utils",
+        "foliantcontrib-meta"
+      ]
+    },
+    {
+      "scc_id": 241328,
+      "node_count": 2,
+      "nodes": [
+        "friskby-controlpanel",
+        "rpiparticle"
+      ]
+    },
+    {
+      "scc_id": 242822,
+      "node_count": 2,
+      "nodes": [
+        "sapientml",
+        "sapientml-core"
+      ]
+    },
+    {
+      "scc_id": 243156,
+      "node_count": 4,
+      "nodes": [
+        "funcnodes-react-flow",
+        "funcnodes",
+        "funcnodes-basic",
+        "funcnodes-module"
+      ]
+    },
+    {
+      "scc_id": 244286,
+      "node_count": 2,
+      "nodes": [
+        "fuzzly-users",
+        "fuzzly-posts"
+      ]
+    },
+    {
+      "scc_id": 245692,
+      "node_count": 3,
+      "nodes": [
+        "galaxy-py-proc",
+        "galaxy-py-app",
+        "galaxy-py-cmd"
+      ]
+    },
+    {
+      "scc_id": 246241,
+      "node_count": 3,
+      "nodes": [
+        "yamlgenerator-hook-search",
+        "yamlgenerator-hook-validate",
+        "gameyamlspiderandgenerator"
+      ]
+    },
+    {
+      "scc_id": 249714,
+      "node_count": 2,
+      "nodes": [
+        "genai-forge",
+        "prompting-forge"
+      ]
+    },
+    {
+      "scc_id": 251076,
+      "node_count": 3,
+      "nodes": [
+        "guiskew",
+        "genskew-univiecube",
+        "genskew-cc"
+      ]
+    },
+    {
+      "scc_id": 256516,
+      "node_count": 3,
+      "nodes": [
+        "githubdata",
+        "giteasy",
+        "mirutil"
+      ]
+    },
+    {
+      "scc_id": 259737,
+      "node_count": 2,
+      "nodes": [
+        "goatshell",
+        "goaat"
+      ]
+    },
+    {
+      "scc_id": 262110,
+      "node_count": 2,
+      "nodes": [
+        "gp-test-dep1",
+        "gp-test-dep2"
+      ]
+    },
+    {
+      "scc_id": 267155,
+      "node_count": 2,
+      "nodes": [
+        "gryszka-hello-package",
+        "gryszka-another-package"
+      ]
+    },
+    {
+      "scc_id": 268979,
+      "node_count": 3,
+      "nodes": [
+        "keyisbclient-mmbp",
+        "keyisbclient",
+        "keyisbclient-httpx"
+      ]
+    },
+    {
+      "scc_id": 270632,
+      "node_count": 3,
+      "nodes": [
+        "hafsqlpublish",
+        "hafapiserver",
+        "haf"
+      ]
+    },
+    {
+      "scc_id": 273841,
+      "node_count": 2,
+      "nodes": [
+        "tsfpga",
+        "hdl-registers"
+      ]
+    },
+    {
+      "scc_id": 274902,
+      "node_count": 2,
+      "nodes": [
+        "py-helios-node",
+        "helios-web3"
+      ]
+    },
+    {
+      "scc_id": 275249,
+      "node_count": 2,
+      "nodes": [
+        "hello-robot-stretch-factory",
+        "hello-robot-stretch-body"
+      ]
+    },
+    {
+      "scc_id": 284165,
+      "node_count": 3,
+      "nodes": [
+        "log-formatter-oc",
+        "huluwa-art",
+        "log-formatter-ocean"
+      ]
+    },
+    {
+      "scc_id": 291879,
+      "node_count": 2,
+      "nodes": [
+        "python-micrometa",
+        "imcflibs"
+      ]
+    },
+    {
+      "scc_id": 296626,
+      "node_count": 2,
+      "nodes": [
+        "inte-prn",
+        "inte-lists"
+      ]
+    },
+    {
+      "scc_id": 308188,
+      "node_count": 2,
+      "nodes": [
+        "saenopy",
+        "jointforces"
+      ]
+    },
+    {
+      "scc_id": 308886,
+      "node_count": 2,
+      "nodes": [
+        "jupyterpidaq-menu",
+        "jupyterpidaq"
+      ]
+    },
+    {
+      "scc_id": 309780,
+      "node_count": 2,
+      "nodes": [
+        "json-ntv",
+        "tab-dataset"
+      ]
+    },
+    {
+      "scc_id": 311813,
+      "node_count": 2,
+      "nodes": [
+        "jupyter-require",
+        "jupyter-nbutils"
+      ]
+    },
+    {
+      "scc_id": 313940,
+      "node_count": 2,
+      "nodes": [
+        "ka-uts-uts",
+        "ka-uts-log"
+      ]
+    },
+    {
+      "scc_id": 313943,
+      "node_count": 2,
+      "nodes": [
+        "ka-uts-dic",
+        "ka-uts-aod"
+      ]
+    },
+    {
+      "scc_id": 323389,
+      "node_count": 2,
+      "nodes": [
+        "phantominator",
+        "ssfp"
+      ]
+    },
+    {
+      "scc_id": 325904,
+      "node_count": 3,
+      "nodes": [
+        "lambdapdk",
+        "siliconcompiler",
+        "lambdalib"
+      ]
+    },
+    {
+      "scc_id": 332372,
+      "node_count": 3,
+      "nodes": [
+        "sugarplot",
+        "spectralpy",
+        "liapy"
+      ]
+    },
+    {
+      "scc_id": 337183,
+      "node_count": 2,
+      "nodes": [
+        "lisflood-utilities",
+        "pyg2p"
+      ]
+    },
+    {
+      "scc_id": 343250,
+      "node_count": 2,
+      "nodes": [
+        "package-tea-eight",
+        "package-tea-nine"
+      ]
+    },
+    {
+      "scc_id": 343252,
+      "node_count": 3,
+      "nodes": [
+        "logstore-tea-four",
+        "logstore-tea-three",
+        "logstore-tea-two"
+      ]
+    },
+    {
+      "scc_id": 347670,
+      "node_count": 2,
+      "nodes": [
+        "m9s-nereid-base",
+        "m9s-nereid"
+      ]
+    },
+    {
+      "scc_id": 350337,
+      "node_count": 2,
+      "nodes": [
+        "makkus-multiformats",
+        "makkus-multiformats-config"
+      ]
+    },
+    {
+      "scc_id": 354335,
+      "node_count": 2,
+      "nodes": [
+        "matflow",
+        "matflow-demo-extension"
+      ]
+    },
+    {
+      "scc_id": 356243,
+      "node_count": 2,
+      "nodes": [
+        "mbf-align",
+        "mbf-genomics"
+      ]
+    },
+    {
+      "scc_id": 356412,
+      "node_count": 2,
+      "nodes": [
+        "mc-automation-tools",
+        "mc-discrete-kit"
+      ]
+    },
+    {
+      "scc_id": 356913,
+      "node_count": 2,
+      "nodes": [
+        "mcot-utils",
+        "mcot-surface"
+      ]
+    },
+    {
+      "scc_id": 362962,
+      "node_count": 2,
+      "nodes": [
+        "meshagent-agents",
+        "meshagent-openai"
+      ]
+    },
+    {
+      "scc_id": 363511,
+      "node_count": 2,
+      "nodes": [
+        "meta-lists",
+        "meta-prn"
+      ]
+    },
+    {
+      "scc_id": 364678,
+      "node_count": 3,
+      "nodes": [
+        "metorial-core",
+        "metorial-generated",
+        "metorial-mcp-session"
+      ]
+    },
+    {
+      "scc_id": 365730,
+      "node_count": 2,
+      "nodes": [
+        "mia-processes",
+        "populse-mia"
+      ]
+    },
+    {
+      "scc_id": 367049,
+      "node_count": 2,
+      "nodes": [
+        "microsoft-teams-cards",
+        "microsoft-teams-api"
+      ]
+    },
+    {
+      "scc_id": 367748,
+      "node_count": 4,
+      "nodes": [
+        "milea-notify",
+        "milea-users",
+        "milea-base",
+        "milea-licence"
+      ]
+    },
+    {
+      "scc_id": 368535,
+      "node_count": 2,
+      "nodes": [
+        "minerva-cargo",
+        "tackle-dgi"
+      ]
+    },
+    {
+      "scc_id": 369754,
+      "node_count": 2,
+      "nodes": [
+        "sopel-help",
+        "sopel"
+      ]
+    },
+    {
+      "scc_id": 372060,
+      "node_count": 2,
+      "nodes": [
+        "ml-platform-client",
+        "mlp-tracking"
+      ]
+    },
+    {
+      "scc_id": 373295,
+      "node_count": 3,
+      "nodes": [
+        "mlrl-testbed",
+        "mlrl-testbed-arff",
+        "mlrl-testbed-sklearn"
+      ]
+    },
+    {
+      "scc_id": 373801,
+      "node_count": 3,
+      "nodes": [
+        "rcsb-utils-config",
+        "rcsb-utils-io",
+        "rcsb-utils-validation"
+      ]
+    },
+    {
+      "scc_id": 376590,
+      "node_count": 2,
+      "nodes": [
+        "molass",
+        "molass-legacy"
+      ]
+    },
+    {
+      "scc_id": 381208,
+      "node_count": 2,
+      "nodes": [
+        "myqlm-fermion",
+        "myqlm"
+      ]
+    },
+    {
+      "scc_id": 382012,
+      "node_count": 2,
+      "nodes": [
+        "mrtutils",
+        "polypacket"
+      ]
+    },
+    {
+      "scc_id": 386615,
+      "node_count": 2,
+      "nodes": [
+        "mwgencode",
+        "mwgencode-mcp"
+      ]
+    },
+    {
+      "scc_id": 390566,
+      "node_count": 2,
+      "nodes": [
+        "raytracing",
+        "mytk"
+      ]
+    },
+    {
+      "scc_id": 408275,
+      "node_count": 2,
+      "nodes": [
+        "npc-stim",
+        "npc-sync"
+      ]
+    },
+    {
+      "scc_id": 408788,
+      "node_count": 2,
+      "nodes": [
+        "nrel-nsrdb",
+        "nrel-mlclouds"
+      ]
+    },
+    {
+      "scc_id": 408877,
+      "node_count": 2,
+      "nodes": [
+        "nrpypn",
+        "nrpy"
+      ]
+    },
+    {
+      "scc_id": 413976,
+      "node_count": 2,
+      "nodes": [
+        "octoflow-plugins",
+        "octoflow"
+      ]
+    },
+    {
+      "scc_id": 433909,
+      "node_count": 2,
+      "nodes": [
+        "oemof",
+        "oemof-db"
+      ]
+    },
+    {
+      "scc_id": 436583,
+      "node_count": 2,
+      "nodes": [
+        "onegov-chat",
+        "onegov-file"
+      ]
+    },
+    {
+      "scc_id": 438278,
+      "node_count": 4,
+      "nodes": [
+        "otai-base",
+        "otai-hf-local",
+        "otai-otobo-znuny",
+        "open-ticket-ai"
+      ]
+    },
+    {
+      "scc_id": 439968,
+      "node_count": 2,
+      "nodes": [
+        "openimis-be-policy",
+        "openimis-be-claim"
+      ]
+    },
+    {
+      "scc_id": 440735,
+      "node_count": 2,
+      "nodes": [
+        "openrewrite",
+        "openrewrite-remote"
+      ]
+    },
+    {
+      "scc_id": 440960,
+      "node_count": 2,
+      "nodes": [
+        "rosa-python-client",
+        "openshift-cluster-management-python-wrapper"
+      ]
+    },
+    {
+      "scc_id": 441448,
+      "node_count": 2,
+      "nodes": [
+        "openvcad",
+        "pyvcad-rendering"
+      ]
+    },
+    {
+      "scc_id": 447318,
+      "node_count": 2,
+      "nodes": [
+        "triangle-cubature",
+        "p1afempy"
+      ]
+    },
+    {
+      "scc_id": 449514,
+      "node_count": 2,
+      "nodes": [
+        "palett",
+        "pyspare"
+      ]
+    },
+    {
+      "scc_id": 450404,
+      "node_count": 2,
+      "nodes": [
+        "pandioml",
+        "pandiocli"
+      ]
+    },
+    {
+      "scc_id": 451594,
+      "node_count": 3,
+      "nodes": [
+        "waveformtools",
+        "spectools",
+        "sxstools"
+      ]
+    },
+    {
+      "scc_id": 458447,
+      "node_count": 3,
+      "nodes": [
+        "sceptre",
+        "sceptre-cmd-resolver",
+        "sceptre-file-resolver"
+      ]
+    },
+    {
+      "scc_id": 472042,
+      "node_count": 2,
+      "nodes": [
+        "simply-nwb",
+        "population-analysis"
+      ]
+    },
+    {
+      "scc_id": 472070,
+      "node_count": 2,
+      "nodes": [
+        "utx",
+        "popups"
+      ]
+    },
+    {
+      "scc_id": 490367,
+      "node_count": 2,
+      "nodes": [
+        "pyaud",
+        "pyaud-plugins"
+      ]
+    },
+    {
+      "scc_id": 520527,
+      "node_count": 3,
+      "nodes": [
+        "yverz",
+        "searchyz",
+        "python-apiy"
+      ]
+    },
+    {
+      "scc_id": 525302,
+      "node_count": 5,
+      "nodes": [
+        "shopyo-base",
+        "shopyo-appadmin",
+        "shopyo",
+        "shopyo-auth",
+        "shopyo-dashboard"
+      ]
+    },
+    {
+      "scc_id": 530201,
+      "node_count": 2,
+      "nodes": [
+        "quri-parts-qulacs",
+        "quri-parts-core"
+      ]
+    },
+    {
+      "scc_id": 530307,
+      "node_count": 2,
+      "nodes": [
+        "qaspen",
+        "qaspen-psycopg"
+      ]
+    },
+    {
+      "scc_id": 539059,
+      "node_count": 2,
+      "nodes": [
+        "rasahub-debug-client",
+        "rasahub-debug"
+      ]
+    },
+    {
+      "scc_id": 540398,
+      "node_count": 3,
+      "nodes": [
+        "rcsb-utils-targets",
+        "rcsb-db",
+        "rcsb-utils-dictionary"
+      ]
+    },
+    {
+      "scc_id": 540547,
+      "node_count": 2,
+      "nodes": [
+        "rddl2tf",
+        "rddlgym"
+      ]
+    },
+    {
+      "scc_id": 549217,
+      "node_count": 2,
+      "nodes": [
+        "reydb",
+        "reykit"
+      ]
+    },
+    {
+      "scc_id": 550495,
+      "node_count": 3,
+      "nodes": [
+        "rilley1",
+        "rilley2",
+        "rilley"
+      ]
+    },
+    {
+      "scc_id": 551881,
+      "node_count": 2,
+      "nodes": [
+        "rms-julian",
+        "rms-textkernel"
+      ]
+    },
+    {
+      "scc_id": 564515,
+      "node_count": 2,
+      "nodes": [
+        "sc2gamelobby",
+        "sc2maptool"
+      ]
+    },
+    {
+      "scc_id": 598887,
+      "node_count": 2,
+      "nodes": [
+        "spotriver",
+        "spotpython"
+      ]
+    },
+    {
+      "scc_id": 615320,
+      "node_count": 2,
+      "nodes": [
+        "sync-dl-ytapi",
+        "sync-dl"
+      ]
+    },
+    {
+      "scc_id": 617383,
+      "node_count": 2,
+      "nodes": [
+        "tacotree-lab",
+        "tacotree"
+      ]
+    },
+    {
+      "scc_id": 621331,
+      "node_count": 28,
+      "nodes": [
+        "teaxyzzz19",
+        "teaxyzzz",
+        "teaxyzzz1",
+        "teaxyzzz16",
+        "teaxyzzz6",
+        "teaxyzzz3",
+        "teaxyzzz9",
+        "teaxyzzz17",
+        "teaxyzzz18",
+        "teaxyzzz13",
+        "teaxyzzz5",
+        "teaxyzzz20",
+        "teaxyzzz8",
+        "teaxyz",
+        "teaxyzzz10",
+        "teaxyzz",
+        "teaxyzzzz",
+        "teaxyzzz4",
+        "tea-xyz1",
+        "teaxyzzz11",
+        "teaxyzzzzzz",
+        "teaxyzzz2",
+        "teaxyzzzzz",
+        "teaxyzzz7",
+        "teaxyzzz15",
+        "teaxyzzz14",
+        "teaxyzzz12",
+        "tea-xyz2"
+      ]
+    },
+    {
+      "scc_id": 621333,
+      "node_count": 2,
+      "nodes": [
+        "teaa2",
+        "teaa"
+      ]
+    },
+    {
+      "scc_id": 631447,
+      "node_count": 2,
+      "nodes": [
+        "thirdweb-ai",
+        "thirdweb-mcp"
+      ]
+    },
+    {
+      "scc_id": 655023,
+      "node_count": 3,
+      "nodes": [
+        "ultima-scraper-db",
+        "ultima-scraper-renamer",
+        "ultima-scraper-collection"
+      ]
+    },
+    {
+      "scc_id": 656675,
+      "node_count": 2,
+      "nodes": [
+        "uniswap-v3-liquidity-pool-simulator",
+        "v3-liquidity-pool-simulator"
+      ]
+    },
+    {
+      "scc_id": 656997,
+      "node_count": 2,
+      "nodes": [
+        "universal-mcp-applications",
+        "universal-mcp-agents"
+      ]
+    },
+    {
+      "scc_id": 657974,
+      "node_count": 3,
+      "nodes": [
+        "uphy-controller",
+        "uphy",
+        "uphy-device"
+      ]
+    },
+    {
+      "scc_id": 661057,
+      "node_count": 5,
+      "nodes": [
+        "valer-core-supermodel",
+        "valer-jsonapi",
+        "valer-core-spotlight",
+        "valer-core-listing",
+        "valer-core"
+      ]
+    },
+    {
+      "scc_id": 661059,
+      "node_count": 2,
+      "nodes": [
+        "valer-panic",
+        "valer-lims"
+      ]
+    },
+    {
+      "scc_id": 663592,
+      "node_count": 2,
+      "nodes": [
+        "vercel",
+        "vercel-sandbox"
+      ]
+    },
+    {
+      "scc_id": 667506,
+      "node_count": 2,
+      "nodes": [
+        "vkbottle-types-vkru",
+        "vkbottle-vkru"
+      ]
+    },
+    {
+      "scc_id": 669134,
+      "node_count": 2,
+      "nodes": [
+        "vplot",
+        "vplanet"
+      ]
+    },
+    {
+      "scc_id": 675762,
+      "node_count": 2,
+      "nodes": [
+        "werkflow-encryption",
+        "werkflow-secrets"
+      ]
+    },
+    {
+      "scc_id": 678768,
+      "node_count": 2,
+      "nodes": [
+        "winrt-windows-ui-xaml-controls",
+        "winrt-windows-ui-xaml-controls-primitives"
+      ]
+    },
+    {
+      "scc_id": 678889,
+      "node_count": 2,
+      "nodes": [
+        "winui3-microsoft-ui-xaml-controls-primitives",
+        "winui3-microsoft-ui-xaml-controls"
+      ]
+    },
+    {
+      "scc_id": 690659,
+      "node_count": 5,
+      "nodes": [
+        "yangsuite-devices",
+        "yangsuite",
+        "yangsuite-yangtree",
+        "yangsuite-filemanager",
+        "yangsuite-netconf"
+      ]
+    },
+    {
+      "scc_id": 693731,
+      "node_count": 2,
+      "nodes": [
+        "yta-video-utils",
+        "yta-image-base"
+      ]
+    },
+    {
+      "scc_id": 693732,
+      "node_count": 2,
+      "nodes": [
+        "yta-video-editor",
+        "yta-video-base"
+      ]
+    },
+    {
+      "scc_id": 695805,
+      "node_count": 2,
+      "nodes": [
+        "zen-garden",
+        "zen-temple"
+      ]
+    },
+    {
+      "scc_id": 698930,
+      "node_count": 2,
+      "nodes": [
+        "zylo-admin",
+        "zylo"
+      ]
+    }
+  ]
+}

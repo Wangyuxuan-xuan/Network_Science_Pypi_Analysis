@@ -1,0 +1,8 @@
+{
+  "timestamp_utc": "2025-11-24T21:16:13Z",
+  "description": "Cleaned PyPI Graph (Ghosts Removed)",
+  "num_projects": 700036,
+  "num_edges": 1839339,
+  "num_ghosts_removed": 1432,
+  "source_dataset": "pypi_global_graph"
+}

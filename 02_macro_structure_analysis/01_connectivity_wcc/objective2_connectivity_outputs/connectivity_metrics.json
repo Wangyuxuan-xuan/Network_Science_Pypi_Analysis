@@ -1,0 +1,17 @@
+{
+  "global_structure": {
+    "total_nodes": 700035,
+    "total_edges": 1839339,
+    "total_connected_components": 302035
+  },
+  "giant_connected_component": {
+    "size": 395779,
+    "percentage_of_ecosystem": 56.537,
+    "status": "Dominant"
+  },
+  "fragmentation": {
+    "isolated_packages_count": 300720,
+    "isolated_packages_percentage": 42.9579,
+    "second_largest_component_size": 82
+  }
+}

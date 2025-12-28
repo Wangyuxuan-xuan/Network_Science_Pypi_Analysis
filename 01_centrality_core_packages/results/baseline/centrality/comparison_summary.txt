@@ -1,0 +1,99 @@
+================================================================================
+OBJECTIVE 5: BASELINE VALIDATION - COMPARISON SUMMARY
+PyPI Dependency Network - Network Science Project
+================================================================================
+
+Analysis Date: 2025-12-04 22:38:52
+
+--------------------------------------------------------------------------------
+Z-SCORE DISTRIBUTION (PageRank)
+--------------------------------------------------------------------------------
+Mean: 9.65
+Median: 11.77
+Std Dev: 4.89
+Min: -50.40
+Max: 596.01
+
+--------------------------------------------------------------------------------
+SIGNIFICANCE LEVELS
+--------------------------------------------------------------------------------
+Packages with |z| > 2 (95% confidence): 342,598 (86.1%)
+Packages with |z| > 3 (99.7% confidence): 331,361 (83.3%)
+
+--------------------------------------------------------------------------------
+TOP 50 PACKAGES BY Z-SCORE
+--------------------------------------------------------------------------------
+
+Rank   Package                             Z-Score    Real PR        Base PR       
+--------------------------------------------------------------------------------
+1      py-key-value-shared                 596.01     0.0000283104   0.0000010197  
+2      polars-runtime-32                   588.84     0.0001916193   0.0000012577  
+3      inspect2                            374.07     0.0001368701   0.0000018290  
+4      typing-inspection                   357.07     0.0017113349   0.0000428664  
+5      nvidia-cublas-cu12                  268.20     0.0003697084   0.0000098665  
+6      nvidia-nvjitlink-cu12               261.46     0.0005770402   0.0000101692  
+7      annotated-doc                       258.62     0.0001486954   0.0000026071  
+8      trame-common                        207.52     0.0000323519   0.0000013412  
+9      persuader-technology-automata-meta-info 197.65     0.0000128211   0.0000011167  
+10     backports-datetime-fromisoformat    182.33     0.0001914924   0.0000066059  
+11     types-awscrt                        175.39     0.0000205227   0.0000010572  
+12     tcmlib                              167.79     0.0000238217   0.0000015184  
+13     smmap                               154.70     0.0005314981   0.0000354080  
+14     azure-nspkg                         150.41     0.0001475739   0.0000091314  
+15     shiboken6                           147.37     0.0002818269   0.0000078392  
+16     ansicon                             127.61     0.0000548390   0.0000032769  
+17     unicode-rbnf                        127.53     0.0000061965   0.0000011195  
+18     mlx-metal                           117.04     0.0000165840   0.0000012210  
+19     nvidia-cufile-cu12                  116.56     0.0000876104   0.0000020041  
+20     hexdoc                              116.25     0.0000336518   0.0000020300  
+21     odoo-addon-base-territory           106.73     0.0000082896   0.0000011006  
+22     bracex                              106.42     0.0000331747   0.0000033052  
+23     alibabacloud-credentials-api        105.48     0.0000142672   0.0000012172  
+24     ros-rosidl-typesupport-c            103.58     0.0000060171   0.0000014700  
+25     html5tagger                         102.42     0.0000212063   0.0000014550  
+26     django-permissionedforms            102.00     0.0000072201   0.0000011948  
+27     backports-os                        100.64     0.0000071957   0.0000012032  
+28     ros-rosidl-core-runtime             98.66      0.0000437954   0.0000021961  
+29     argumentsignature                   98.47      0.0000020253   0.0000010202  
+30     queenbee-pollination                96.22      0.0000165276   0.0000010956  
+31     robotpy-native-wpiutil              94.83      0.0000257830   0.0000018429  
+32     standard-chunk                      94.32      0.0000286347   0.0000013371  
+33     pykeybasebot                        94.11      0.0000020253   0.0000010055  
+34     juliapkg                            94.04      0.0000116944   0.0000029546  
+35     vvv-rpc-server-stable               93.24      0.0000015929   0.0000010108  
+36     graphemeu                           93.22      0.0000123156   0.0000012466  
+37     win32-setctime                      89.71      0.0002300043   0.0000128107  
+38     astropy-iers-data                   86.97      0.0000550257   0.0000028467  
+39     tensorrt-cu13-bindings              85.63      0.0000054257   0.0000010544  
+40     pyqt5-sip                           82.56      0.0001739711   0.0000260432  
+41     nvidia-cusparse-cu12                81.92      0.0001583315   0.0000081862  
+42     adafruit-circuitpython-ticks        80.82      0.0000173487   0.0000016414  
+43     types-webencodings                  79.22      0.0000114680   0.0000010908  
+44     runs                                78.77      0.0000341152   0.0000026595  
+45     karrio                              76.56      0.0000437338   0.0000098691  
+46     jinxed                              75.94      0.0000526044   0.0000033269  
+47     streamlit                           75.11      0.0009272257   0.0004254608  
+48     aws-cdk-asset-node-proxy-agent-v6   73.16      0.0000131888   0.0000011395  
+49     odoo-addon-fieldservice-account     72.50      0.0000031530   0.0000015677  
+50     nvidia-cudnn-cu12                   71.97      0.0000882182   0.0000074959  
+
+--------------------------------------------------------------------------------
+CONFIGURATION
+--------------------------------------------------------------------------------
+Betweenness Centrality Computed: True
+Parallel Processing: True
+Number of Workers: 5
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+
+Positive z-scores indicate packages that are MORE important than expected
+based on degree distribution alone - these have genuine structural significance.
+
+Negative z-scores indicate packages that are LESS important than expected
+based on their degree - these may be structurally constrained.
+
+================================================================================
+END OF SUMMARY
+================================================================================
