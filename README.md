@@ -197,6 +197,57 @@ python analyze_trophic_levels.py --graph-dir pypi_dag --output-dir objective2_ou
 ```
 
 
+## Objective 3: Community Detection
+
+This section identifies groups of Python packages that are frequently used together, which we term Technology Stacks. These stacks reveal the modular organization of the PyPI ecosystem and highlight how packages are clustered functionally.
+
+All scripts and outputs for this objective are located in `03_community_detection/`. This section contains two methods for community detection: 01_Louvain_method and 02_LPA_method. Each method is applied to both Real Data (pypi_dag) and the Random Data generated in Objective 5, allowing comparison between the real PyPI network and randomized baselines.
+
+### 1. Louvain Community Detection
+
+**Directory:** `03_community_detection/01_Louvain_method`
+
+* **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
+* **Methodology:** We project the directed PyPI dependency graph into an undirected graph.
+1. Apply the Louvain algorithm, which iteratively maximizes modularity (Q).
+2. The modularity score measures the strength of community division compared to a random graph with the same degree distribution.
+
+Output Files Example: We take RealData as output files example.
+| Output File | Description |
+| --- | --- |
+| `analysis_summary.txt` | Summary for top 5 largest communities, including modularity and community sizes. |
+| `1_pagerank_core_for_gephi.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank. |
+| `top_5_stacks_summary.csv` | Summary table for the top 5 largest communities. |
+| `Abstract Dependency Network of Top 10 PyPI Stacks.png` | Visualization of the dependency network for the top 10 largest PyPI communities. |
+| `Core dependency structure for stack 6.png` | Visualization of the core dependency structure for stack 6. |
+| `2_top_5_communities_for_gephi.gexf` | GEXF file for Gephi visualization of the top 5 largest communities. |
+| `3_abstract_community_network.gexf` | GEXF file for Gephi visualization of the abstract community network. |
+| `pypi_full_partition_realdata.csv` | Detailed full partition of all nodes for real data. |
+
+* **Key Insight:** 
+The real PyPI network exhibits a markedly stronger community structure than the randomized baselines. The observed modularity exceeds the baseline average by a wide margin, indicating that packages are organized into cohesive groups that are far denser internally than expected under random connectivity.
+
+
+### 2. LPA (Label Propagation Algorithm)
+
+**Directory:** `03_community_detection/02_LPA_method`
+
+* **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
+* **Methodology:** We apply the Label Propagation Algorithm (LPA) on the same graph.
+1. LPA is a fast, heuristic approach that assigns nodes to communities based on iterative label propagation.
+2. While less aggressive than Louvain, it provides a robustness check to confirm that the modular structure identified is meaningful.
+
+Output Files Example: We take RealData as output files example.
+| Output File | Description |
+| --- | --- |
+| `analysis_summary_lpa.txt` | Summary for top 5 largest communities detected using LPA. |
+| `1_pagerank_core_lpa.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank using LPA. |
+| `2_abstract_community_network_lpa.csv` | Summary table for the top 5 largest communities detected using LPA. |
+
+* **Key Insight:**
+The real network’s LPA Q is much more higher than the random baseline, highlighting strong modular structure. LPA reveals a dominant cluster containing 86% of packages, whereas the random network shows >98% in one cluster. This confirms that while the ecosystem is highly interconnected, Louvain better uncovers subtle modular boundaries.
+
+
 
 ## Objective 5: Baseline Validation with Random Graphs
 
