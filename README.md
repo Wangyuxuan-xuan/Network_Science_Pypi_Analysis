@@ -208,9 +208,8 @@ All scripts and outputs for this objective are located in `03_community_detectio
 **Directory:** `03_community_detection/01_Louvain_method`
 
 * **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
-* **Methodology:** We project the directed PyPI dependency graph into an undirected graph.
-1. Apply the Louvain algorithm, which iteratively maximizes modularity (Q).
-2. The modularity score measures the strength of community division compared to a random graph with the same degree distribution.
+* **Methodology:** We project the directed PyPI dependency graph into an undirected graph. Then we apply the Louvain algorithm, which iteratively maximizes modularity (Q).
+**The modularity score:** The Q value measures the strength of community division compared to a random graph with the same degree distribution.
 
 Output Files Example: We take RealData as output files example.
 | Output File | Description |
@@ -233,9 +232,8 @@ The real PyPI network exhibits a markedly stronger community structure than the 
 **Directory:** `03_community_detection/02_LPA_method`
 
 * **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
-* **Methodology:** We apply the Label Propagation Algorithm (LPA) on the same graph.
-1. LPA is a fast, heuristic approach that assigns nodes to communities based on iterative label propagation.
-2. While less aggressive than Louvain, it provides a robustness check to confirm that the modular structure identified is meaningful.
+* **Methodology:** We apply the Label Propagation Algorithm (LPA) on the same graph. LPA is a fast, heuristic approach that assigns nodes to communities based on iterative label propagation.
+**Compared to Louvain:** While less aggressive than Louvain, it provides a robustness check to confirm that the modular structure identified is meaningful.
 
 Output Files Example: We take RealData as output files example.
 | Output File | Description |
