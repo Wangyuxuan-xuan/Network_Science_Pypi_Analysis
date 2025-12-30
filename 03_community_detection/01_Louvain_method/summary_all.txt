@@ -1,0 +1,260 @@
+
+==================================================
+        NETWORK ANALYSIS SUMMARY
+==================================================
+Date: 2025-12-28 22:42:24
+Graph Name: REAL PyPI Dependency Network
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397798
+Edges (Dependencies): 1819937
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.4755  <-- Objective 5 BASELINE
+Total Communities Found: 1540
+
+--- TOP 10 LARGEST STACKS ---
+
+Stack #1 (ID: 6): Size=80618 (20.27%)
+  Core Hubs: numpy, pandas, matplotlib, scipy, scikit-learn, seaborn, opencv-python, networkx
+Stack #2 (ID: 4): Size=57375 (14.42%)
+  Core Hubs: pydantic, tqdm, rich, torch, python-dotenv, httpx, typer, fastapi
+Stack #3 (ID: 194): Size=47400 (11.92%)
+  Core Hubs: pyyaml, click, jinja2, psutil, boto3, colorama, tabulate, toml
+Stack #4 (ID: 1): Size=45894 (11.54%)
+  Core Hubs: typing-extensions, python-dateutil, urllib3, six, flask, packaging, cryptography, pytz
+Stack #5 (ID: 238): Size=43074 (10.83%)
+  Core Hubs: requests, beautifulsoup4, lxml, selenium, bs4, appdirs, argparse, xmltodict
+Stack #6 (ID: 38): Size=18993 (4.77%)
+  Core Hubs: odoo, python-stdnum, odoo14-addon-ssi-master-data-mixin, odoo14-addon-ssi-transaction-cancel-mixin, odoo14-addon-ssi-transaction-confirm-mixin, odoo14-addon-ssi-transaction-done-mixin, openupgradelib, odoo-addon-queue-job
+Stack #7 (ID: 101): Size=15684 (3.94%)
+  Core Hubs: django, redis, pymongo, djangorestframework, celery, sentry-sdk, elasticsearch, pika
+Stack #8 (ID: 9): Size=15221 (3.83%)
+  Core Hubs: sqlalchemy, openpyxl, pyarrow, pycryptodome, pyqt5, psycopg2-binary, polars, pymysql
+Stack #9 (ID: 5): Size=13229 (3.33%)
+  Core Hubs: pillow, pygame, pywin32, nonebot2, pyside6, reportlab, pyautogui, qrcode
+Stack #10 (ID: 10): Size=10982 (2.76%)
+  Core Hubs: pytest, sphinx, black, flake8, pytest-cov, coverage, pre-commit, mypy
+
+==================================================
+
+
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 21:44:09
+Graph Name: Random Graph: random_graph_1.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2389
+Total Communities Found: 551
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 179): Size=22418 (5.64%)
+  Core Hubs: numpy, docstring-parser, wagtail, magicgui, diffusers, anytree, weasyprint, stevedore
+Stack #2 (ID: 22): Size=21600 (5.43%)
+  Core Hubs: requests, nest-asyncio, gymnasium, tomli-w, ftfy, snowflake-connector-python, whitenoise, evaluate
+Stack #3 (ID: 30): Size=18724 (4.71%)
+  Core Hubs: pandas, paramiko, gunicorn, pbr, pint, rsa, notebook, isort
+Stack #4 (ID: 33): Size=12478 (3.14%)
+  Core Hubs: scipy, pyperclip, tornado, prometheus-client, fonttools, pyqt6, absl-py, exceptiongroup
+Stack #5 (ID: 3): Size=12307 (3.09%)
+  Core Hubs: matplotlib, dataclasses, python-docx, elasticsearch, antlr4-python3-runtime, python-gitlab, pyvista, tensorboardx
+Stack #6 (ID: 29): Size=11881 (2.99%)
+  Core Hubs: pyyaml, tomlkit, opentelemetry-api, dataclasses-json, pytest-asyncio, deepdiff, jieba, python-telegram-bot
+Stack #7 (ID: 5): Size=11871 (2.98%)
+  Core Hubs: pydantic, colorlog, aws-cdk-lib, ujson, wcwidth, azure-storage-blob, sounddevice, pyotp
+Stack #8 (ID: 24): Size=11314 (2.84%)
+  Core Hubs: click, spacy, emoji, pyodbc, python-socketio, jedi, ply, inflect
+Stack #9 (ID: 36): Size=10711 (2.69%)
+  Core Hubs: tqdm, pymysql, itsdangerous, pypdf, multidict, jupyter-server, virtualenv, mutagen
+Stack #10 (ID: 26): Size=8474 (2.13%)
+  Core Hubs: odoo, pycryptodome, tzdata, bcrypt, dateparser, sqlmodel, waitress, tree-sitter
+
+==================================================
+
+
+
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 21:49:47
+Graph Name: Random Graph: random_graph_2.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2386
+Total Communities Found: 515
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 27): Size=21745 (5.47%)
+  Core Hubs: numpy, mutagen, retry, rioxarray, eth-utils, langsmith, pythonnet, pure-eval
+Stack #2 (ID: 24): Size=21013 (5.28%)
+  Core Hubs: requests, python-slugify, pywavelets, pdfplumber, sly, setproctitle, eventlet, lazy-loader
+Stack #3 (ID: 6): Size=17743 (4.46%)
+  Core Hubs: pandas, anthropic, inquirer, docstring-parser, robotframework, folium, authlib, semantic-version
+Stack #4 (ID: 7): Size=12197 (3.07%)
+  Core Hubs: matplotlib, google-api-python-client, wrapt, google-auth-httplib2, nbconvert, alibabacloud-endpoint-util, kaleido, python-levenshtein
+Stack #5 (ID: 3): Size=11884 (2.99%)
+  Core Hubs: pyyaml, fire, pymupdf, aws-cdk-lib, pypdf, mkdocs, oauthlib, jaxlib
+Stack #6 (ID: 13): Size=11876 (2.99%)
+  Core Hubs: click, appdirs, torchaudio, json5, dotenv, sounddevice, pyasn1-modules, httplib2
+Stack #7 (ID: 40): Size=11594 (2.91%)
+  Core Hubs: scipy, tornado, litellm, feedparser, timm, pyaudio, proto-plus, fiona
+Stack #8 (ID: 26): Size=11582 (2.91%)
+  Core Hubs: tqdm, accelerate, wandb, gevent, pytorch-lightning, traitlets, geopy, pdf2image
+Stack #9 (ID: 18): Size=11295 (2.84%)
+  Core Hubs: pydantic, bcrypt, itsdangerous, qrcode, oauth2client, typing-inspect, antchain-alipay-util, igraph
+Stack #10 (ID: 57): Size=8724 (2.19%)
+  Core Hubs: scikit-learn, tomli, importlib-resources, dill, msgpack, pint, asgiref, tree-sitter
+
+==================================================
+
+
+
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 21:54:59
+Graph Name: Random Graph: random_graph_3.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2389
+Total Communities Found: 519
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 165): Size=22294 (5.60%)
+  Core Hubs: numpy, pyqtgraph, rfc3986, pdf2image, ftfy, parso, progress, gtts
+Stack #2 (ID: 138): Size=22118 (5.56%)
+  Core Hubs: requests, tzdata, omegaconf, nonebot-adapter-onebot, onnx, pybind11, dotenv, aiosignal
+Stack #3 (ID: 25): Size=17533 (4.41%)
+  Core Hubs: pandas, tensorboard, pycparser, mock, pynput, altair, alibabacloud-tea-util-py2, trimesh
+Stack #4 (ID: 17): Size=12471 (3.14%)
+  Core Hubs: pydantic, geopandas, zipp, requests-oauthlib, lark, ply, motor, langchain-anthropic
+Stack #5 (ID: 182): Size=12336 (3.10%)
+  Core Hubs: pyyaml, appdirs, djangorestframework, python-docx, celery, jsonpickle, httpcore, ase
+Stack #6 (ID: 0): Size=12281 (3.09%)
+  Core Hubs: scipy, python-slugify, dacite, frozenlist, twisted, opentelemetry-exporter-otlp, tensorflow-probability, trytond
+Stack #7 (ID: 43): Size=11640 (2.93%)
+  Core Hubs: matplotlib, pyautogui, fastcore, jsonpath-ng, antlr4-python3-runtime, gql, pygobject, argon2-cffi
+Stack #8 (ID: 27): Size=11580 (2.91%)
+  Core Hubs: click, xmltodict, pytest-cov, pylint, rapidfuzz, nbconvert, uuid, matplotlib-inline
+Stack #9 (ID: 201): Size=10364 (2.61%)
+  Core Hubs: tqdm, pyside6, pycryptodomex, python-jose, webdriver-manager, azure-storage-blob, safetensors, albumentations
+Stack #10 (ID: 15): Size=9443 (2.37%)
+  Core Hubs: odoo, aiofiles, anyio, watchdog, markdown-it-py, scanpy, tables, pynacl
+
+==================================================
+
+
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 22:02:33
+Graph Name: Random Graph: random_graph_4.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2388
+Total Communities Found: 507
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 0): Size=22281 (5.60%)
+  Core Hubs: numpy, anndata, python-json-logger, langchain-anthropic, sqlglot, fabric, eventlet, jsonpointer
+Stack #2 (ID: 207): Size=20596 (5.18%)
+  Core Hubs: requests, types-requests, setuptools-scm, cvxpy, cerberus, wordcloud, pycocotools, ordered-set
+Stack #3 (ID: 29): Size=16442 (4.13%)
+  Core Hubs: pandas, google-cloud-bigquery, altair, parse, alibabacloud-rpc-util, pyttsx3, eth-utils, gtts
+Stack #4 (ID: 38): Size=12959 (3.26%)
+  Core Hubs: scipy, pytest-cov, bcrypt, pre-commit, elasticsearch, zope-interface, pynput, phonenumbers
+Stack #5 (ID: 145): Size=12278 (3.09%)
+  Core Hubs: pydantic, distro, pycryptodomex, rdflib, mdurl, exceptiongroup, pydot, ecdsa
+Stack #6 (ID: 9): Size=12258 (3.08%)
+  Core Hubs: pyyaml, platformdirs, unidecode, webdriver-manager, multiprocess, antlr4-python3-runtime, aenum, alibabacloud-openapi-util-py2
+Stack #7 (ID: 6): Size=11866 (2.98%)
+  Core Hubs: matplotlib, deprecated, natsort, msal, overrides, pynvml, imageio-ffmpeg, aioredis
+Stack #8 (ID: 27): Size=10882 (2.74%)
+  Core Hubs: click, tensorboard, jsonpickle, pysocks, sounddevice, ply, minio, uuid
+Stack #9 (ID: 32): Size=10149 (2.55%)
+  Core Hubs: scikit-learn, toml, cachetools, structlog, paho-mqtt, optuna, geopy, cookiecutter
+Stack #10 (ID: 48): Size=8657 (2.18%)
+  Core Hubs: tqdm, djangorestframework, feedparser, aws-cdk-core, authlib, aiodns, pypandoc, jsonpatch
+
+==================================================
+
+
+
+
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 22:09:54
+Graph Name: Random Graph: random_graph_5.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2385
+Total Communities Found: 497
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 28): Size=21840 (5.49%)
+  Core Hubs: numpy, croniter, trio, astroquery, qdrant-client, mkdocs-material, opt-einsum, thefuzz
+Stack #2 (ID: 0): Size=20447 (5.14%)
+  Core Hubs: requests, base58, fastparquet, curl-cffi, evaluate, markdown2, mysqlclient, cairosvg
+Stack #3 (ID: 45): Size=17431 (4.38%)
+  Core Hubs: pandas, jmespath, dash, nonebot-adapter-onebot, pysocks, pyopengl, invoke, et-xmlfile
+Stack #4 (ID: 163): Size=12217 (3.07%)
+  Core Hubs: click, markdown, xgboost, pydub, isort, yt-dlp, moviepy, exceptiongroup
+Stack #5 (ID: 46): Size=12026 (3.02%)
+  Core Hubs: matplotlib, pathlib, babel, pytesseract, tables, google-genai, python-socketio, dacite
+Stack #6 (ID: 29): Size=11953 (3.00%)
+  Core Hubs: scipy, charset-normalizer, cython, rsa, jaraco-classes, poetry, configargparse, zeep
+Stack #7 (ID: 16): Size=11896 (2.99%)
+  Core Hubs: pydantic, pygame, faker, toolz, tldextract, dynaconf, setuptools-scm, uuid
+Stack #8 (ID: 81): Size=11637 (2.93%)
+  Core Hubs: pyyaml, python-docx, mkdocs, mdurl, kaleido, winrt-runtime, brotli, opentelemetry-instrumentation
+Stack #9 (ID: 33): Size=11218 (2.82%)
+  Core Hubs: tqdm, pyperclip, flask-cors, soundfile, pycryptodomex, defusedxml, pytest-asyncio, pendulum
+Stack #10 (ID: 121): Size=9142 (2.30%)
+  Core Hubs: odoo, cffi, starlette, bcrypt, grpcio-tools, html5lib, langgraph, pynput
+
+==================================================
+
+
+
+
+
+
