@@ -2,7 +2,21 @@
 
 ## Project Overview
 
-!!! THIS PART SHOULD BE UPDATED ONCE ALL OBJECTIVES ARE ADDED. !!!
+This project provides a comprehensive Network Science analysis of the Python Package Index (PyPI) ecosystem. By modeling over 700,000 projects as a complex directed graph, we investigate the hidden structural dynamics, dependencies, and systemic risks within the world’s largest Python software repository.
+
+Our analysis transforms raw crawl data into a verified Directed Acyclic Graph (DAG) to map the "Global Supply Chain" of Python software through five core lenses:
+
+* **Core Identification**: Leveraging centrality measures (PageRank, Betweenness) and Trophic Level analysis to distinguish foundational infrastructure from high-level applications.
+
+* **Macro-Structural Topology**: Applying the Bow-Tie Model and connectivity analysis to identify the "Giant Component" of the ecosystem and isolate structural flaws like circular dependencies.
+
+* **Community Detection**: Utilizing Louvain and LPA algorithms to uncover "Technology Stacks"—functional clusters of packages that are frequently co-dependent and used together.
+
+* **Ecosystem Resilience**: Simulating targeted attacks on critical nodes to quantify Cascade Failures, measuring how the removal of a single core library (e.g., numpy) impacts the integrity of the entire network.
+
+* **Baseline Validation**: Comparing real-world data against Randomized Null Models (degree-preserving DAGs) to ensure that discovered patterns are genuine structural properties rather than statistical artifacts.
+
+This multi-stage pipeline provides researchers and stakeholders with a high-fidelity map of Python’s modular architecture and its vulnerability to supply chain disruptions.
 
 
 ## Data Acquisition & Processing
