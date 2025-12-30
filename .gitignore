@@ -1,1 +1,5 @@
 results/baseline/centrality/baseline_comparison.csv
+.DS_Store
+.idea/
+__pycache__/
+proposal/
