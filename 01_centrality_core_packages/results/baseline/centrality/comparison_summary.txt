@@ -3,7 +3,7 @@ OBJECTIVE 5: BASELINE VALIDATION - COMPARISON SUMMARY
 PyPI Dependency Network - Network Science Project
 ================================================================================
 
-Analysis Date: 2025-12-04 22:38:52
+Analysis Date: 2025-12-28 12:24:37
 
 --------------------------------------------------------------------------------
 Z-SCORE DISTRIBUTION (PageRank)
@@ -80,7 +80,7 @@ Rank   Package                             Z-Score    Real PR        Base PR
 --------------------------------------------------------------------------------
 CONFIGURATION
 --------------------------------------------------------------------------------
-Betweenness Centrality Computed: True
+Betweenness Centrality Computed: False
 Parallel Processing: True
 Number of Workers: 5
 
@@ -93,6 +93,9 @@ based on degree distribution alone - these have genuine structural significance.
 
 Negative z-scores indicate packages that are LESS important than expected
 based on their degree - these may be structurally constrained.
+
+Note: Betweenness centrality was skipped for performance reasons.
+To include it, set CONFIG['compute_betweenness'] = True in the script.
 
 ================================================================================
 END OF SUMMARY

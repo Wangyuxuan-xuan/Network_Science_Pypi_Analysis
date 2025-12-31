@@ -33,7 +33,7 @@ DATA_DIR = Path("data")
 GRAPH_CACHE_FILE = DATA_DIR / "graph_cache.pkl"
 
 RESULTS_DIR = Path("results/baseline/centrality")
-RANDOM_GRAPHS_DIR = RESULTS_DIR / "random_graphs"
+RANDOM_GRAPHS_DIR = Path("results/baseline/random_graphs")  # Fixed path
 PLOTS_DIR = RESULTS_DIR
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -43,7 +43,7 @@ ORIGINAL_CENTRALITY_FILE = CENTRALITY_DIR / "centrality_results.csv"
 
 # Configuration
 CONFIG = {
-    'compute_betweenness': True,  # Set to True to compute betweenness (very slow, 75min for k=5000 )
+    'compute_betweenness': False,  # Set to True to compute betweenness (very slow, 75min for k=5000 )
     'use_parallel': True,  # Use parallel processing for random graphs
     'n_jobs': min(5, cpu_count()),  # Number of parallel jobs
 }
@@ -368,76 +368,204 @@ def create_visualizations(comparison_df):
     try:
         sns.set_style("whitegrid")
         
-        # Create figure with 2x2 subplots
-        fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+        # Load original centrality data for comparison
+        original_df = pd.read_csv(ORIGINAL_CENTRALITY_FILE)
         
-        # 1. Z-score distribution
-        print("  - Z-score distribution histogram...")
-        z_pr = comparison_df['z_score_pagerank']
-        axes[0, 0].hist(z_pr[z_pr.abs() < 50], bins=50, edgecolor='black', alpha=0.7, color='steelblue')
-        axes[0, 0].axvline(x=2, color='red', linestyle='--', label='|z|=2 (95%)')
-        axes[0, 0].axvline(x=-2, color='red', linestyle='--')
-        axes[0, 0].axvline(x=3, color='darkred', linestyle='--', label='|z|=3 (99.7%)')
-        axes[0, 0].axvline(x=-3, color='darkred', linestyle='--')
-        axes[0, 0].set_xlabel('Z-Score (PageRank)')
-        axes[0, 0].set_ylabel('Frequency')
-        axes[0, 0].set_title('Z-Score Distribution (PageRank)')
-        axes[0, 0].legend()
-        axes[0, 0].grid(True, alpha=0.3)
+        # ========== PLOT 1: PageRank Distribution Comparison ==========
+        print("  - Plot 1: PageRank Distribution (Original vs Baseline)...")
+        fig, axes = plt.subplots(1, 2, figsize=(14, 5))
         
-        # 2. Top 20 packages by z-score
-        print("  - Top 20 packages bar chart...")
-        top20 = comparison_df.head(20)
-        y_pos = range(len(top20))
-        axes[0, 1].barh(y_pos, top20['z_score_pagerank'], color='steelblue')
-        axes[0, 1].set_yticks(y_pos)
-        axes[0, 1].set_yticklabels(top20['package'], fontsize=8)
-        axes[0, 1].set_xlabel('Z-Score')
-        axes[0, 1].set_title('Top 20 Packages by Z-Score (PageRank)')
-        axes[0, 1].invert_yaxis()
-        axes[0, 1].axvline(x=3, color='red', linestyle='--', alpha=0.5)
-        axes[0, 1].grid(True, alpha=0.3, axis='x')
+        # Original distribution
+        axes[0].hist(np.log10(original_df['pagerank'] + 1e-10), bins=50, 
+                     edgecolor='black', alpha=0.7, color='steelblue')
+        axes[0].set_xlabel('log10(PageRank)', fontsize=11)
+        axes[0].set_ylabel('Frequency (log scale)', fontsize=11)
+        axes[0].set_yscale('log')
+        axes[0].set_title('Original: PageRank Distribution', fontsize=12, fontweight='bold')
+        axes[0].grid(True, alpha=0.3)
         
-        # 3. Real vs Baseline PageRank scatter
-        print("  - Real vs Baseline scatter plot...")
-        axes[1, 0].scatter(comparison_df['baseline_mean_pagerank'], 
-                          comparison_df['real_pagerank'],
-                          alpha=0.5, s=10)
-        # Add diagonal line
-        max_val = max(comparison_df['baseline_mean_pagerank'].max(), 
-                     comparison_df['real_pagerank'].max())
-        axes[1, 0].plot([0, max_val], [0, max_val], 'r--', alpha=0.5, label='x=y')
-        axes[1, 0].set_xlabel('Baseline Mean PageRank')
-        axes[1, 0].set_ylabel('Real PageRank')
-        axes[1, 0].set_title('Real vs Baseline PageRank')
-        axes[1, 0].set_xscale('log')
-        axes[1, 0].set_yscale('log')
-        axes[1, 0].legend()
-        axes[1, 0].grid(True, alpha=0.3)
-        
-        # 4. Significance levels pie chart
-        print("  - Significance levels pie chart...")
-        sig_3 = (z_pr.abs() > 3).sum()
-        sig_2_only = ((z_pr.abs() > 2) & (z_pr.abs() <= 3)).sum()
-        not_sig = (z_pr.abs() <= 2).sum()
-        
-        sizes = [sig_3, sig_2_only, not_sig]
-        labels = [f'|z| > 3\n({sig_3:,}, {sig_3/len(z_pr)*100:.1f}%)',
-                 f'2 < |z| ≤ 3\n({sig_2_only:,}, {sig_2_only/len(z_pr)*100:.1f}%)',
-                 f'|z| ≤ 2\n({not_sig:,}, {not_sig/len(z_pr)*100:.1f}%)']
-        colors = ['darkred', 'orange', 'lightgray']
-        
-        axes[1, 1].pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90)
-        axes[1, 1].set_title('Statistical Significance Levels')
+        # Baseline distribution
+        axes[1].hist(np.log10(comparison_df['baseline_mean_pagerank'] + 1e-10), bins=50, 
+                     edgecolor='black', alpha=0.7, color='orange')
+        axes[1].set_xlabel('log10(PageRank)', fontsize=11)
+        axes[1].set_ylabel('Frequency (log scale)', fontsize=11)
+        axes[1].set_yscale('log')
+        axes[1].set_title('Baseline: PageRank Distribution (Avg of 5 Random)', fontsize=12, fontweight='bold')
+        axes[1].grid(True, alpha=0.3)
         
         plt.tight_layout()
-        plot_file = PLOTS_DIR / "baseline_comparison.png"
-        plt.savefig(plot_file, dpi=300, bbox_inches='tight')
-        print(f"\n✓ Saved visualization to {plot_file}")
+        plot1_file = PLOTS_DIR / "1_pagerank_distribution.png"
+        plt.savefig(plot1_file, dpi=300, bbox_inches='tight')
+        print(f"    ✓ Saved: {plot1_file}")
         plt.close()
+        
+        # ========== PLOT 2: Top 20 Packages Comparison ==========
+        print("  - Plot 2: Top 20 Packages (Original vs Baseline)...")
+        fig, axes = plt.subplots(1, 2, figsize=(14, 8))
+        
+        # Get top 20 from original
+        top_20_orig = original_df.head(20)
+        
+        # Original
+        y_pos = range(len(top_20_orig))
+        axes[0].barh(y_pos, top_20_orig['pagerank'], color='steelblue', alpha=0.8)
+        axes[0].set_yticks(y_pos)
+        axes[0].set_yticklabels(top_20_orig['package'], fontsize=9)
+        axes[0].invert_yaxis()
+        axes[0].set_xlabel('PageRank', fontsize=11)
+        axes[0].set_title('Original: Top 20 Packages by PageRank', fontsize=12, fontweight='bold')
+        axes[0].grid(True, alpha=0.3, axis='x')
+        
+        # Baseline - same packages
+        top_20_baseline = comparison_df[comparison_df['package'].isin(top_20_orig['package'])].copy()
+        top_20_baseline = top_20_baseline.set_index('package').loc[top_20_orig['package']].reset_index()
+        axes[1].barh(y_pos, top_20_baseline['baseline_mean_pagerank'], color='orange', alpha=0.8)
+        axes[1].set_yticks(y_pos)
+        axes[1].set_yticklabels(top_20_baseline['package'], fontsize=9)
+        axes[1].invert_yaxis()
+        axes[1].set_xlabel('PageRank', fontsize=11)
+        axes[1].set_title('Baseline: Top 20 Packages by PageRank', fontsize=12, fontweight='bold')
+        axes[1].grid(True, alpha=0.3, axis='x')
+        
+        plt.tight_layout()
+        plot2_file = PLOTS_DIR / "2_top20_packages.png"
+        plt.savefig(plot2_file, dpi=300, bbox_inches='tight')
+        print(f"    ✓ Saved: {plot2_file}")
+        plt.close()
+        
+        # ========== PLOT 3: PageRank vs In-Degree Scatter ==========
+        print("  - Plot 3: PageRank vs In-Degree (Original vs Baseline)...")
+        fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+        
+        # Original
+        axes[0].scatter(original_df['in_degree'], original_df['pagerank'], 
+                       alpha=0.5, s=10, color='steelblue')
+        axes[0].set_xlabel('In-Degree', fontsize=11)
+        axes[0].set_ylabel('PageRank', fontsize=11)
+        axes[0].set_xscale('log')
+        axes[0].set_yscale('log')
+        axes[0].set_title('Original: PageRank vs In-Degree', fontsize=12, fontweight='bold')
+        axes[0].grid(True, alpha=0.3)
+        
+        # Calculate correlation
+        corr_orig = original_df[['in_degree', 'pagerank']].corr().iloc[0, 1]
+        axes[0].text(0.05, 0.95, f'r = {corr_orig:.3f}', transform=axes[0].transAxes, 
+                    fontsize=10, verticalalignment='top', 
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+        
+        # Baseline - merge with in_degree from original
+        baseline_merged = comparison_df.merge(original_df[['package', 'in_degree']], 
+                                             on='package', how='left')
+        axes[1].scatter(baseline_merged['in_degree'], baseline_merged['baseline_mean_pagerank'], 
+                       alpha=0.5, s=10, color='orange')
+        axes[1].set_xlabel('In-Degree', fontsize=11)
+        axes[1].set_ylabel('PageRank', fontsize=11)
+        axes[1].set_xscale('log')
+        axes[1].set_yscale('log')
+        axes[1].set_title('Baseline: PageRank vs In-Degree', fontsize=12, fontweight='bold')
+        axes[1].grid(True, alpha=0.3)
+        
+        # Calculate correlation
+        corr_base = baseline_merged[['in_degree', 'baseline_mean_pagerank']].corr().iloc[0, 1]
+        axes[1].text(0.05, 0.95, f'r = {corr_base:.3f}', transform=axes[1].transAxes, 
+                    fontsize=10, verticalalignment='top', 
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+        
+        plt.tight_layout()
+        plot3_file = PLOTS_DIR / "3_pagerank_vs_indegree.png"
+        plt.savefig(plot3_file, dpi=300, bbox_inches='tight')
+        print(f"    ✓ Saved: {plot3_file}")
+        plt.close()
+        
+        # ========== PLOT 4: Centrality Measures Comparison (Top 50) ==========
+        print("  - Plot 4: Centrality Measures Comparison (Original vs Baseline, Top 50)...")
+        fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+        
+        # Get top 50 from original
+        top_50_orig = original_df.head(50)
+        
+        # Normalize function
+        def normalize(series):
+            return (series - series.min()) / (series.max() - series.min()) if series.max() > series.min() else series
+        
+        # Original
+        x = range(50)
+        axes[0].plot(x, normalize(top_50_orig['pagerank']), 'o-', 
+                    label='PageRank', linewidth=1.5, markersize=4)
+        axes[0].plot(x, normalize(top_50_orig['in_degree_centrality']), 's-', 
+                    label='In-Degree', linewidth=1.5, markersize=4)
+        axes[0].plot(x, normalize(top_50_orig['eigenvector_centrality']), '^-', 
+                    label='Eigenvector', linewidth=1.5, markersize=4)
+        axes[0].set_xlabel('Rank', fontsize=11)
+        axes[0].set_ylabel('Normalized Centrality', fontsize=11)
+        axes[0].set_title('Original: Centrality Measures (Top 50)', fontsize=12, fontweight='bold')
+        axes[0].legend(fontsize=9)
+        axes[0].grid(True, alpha=0.3)
+        
+        # Baseline - same packages
+        top_50_baseline = comparison_df[comparison_df['package'].isin(top_50_orig['package'])].copy()
+        top_50_baseline = top_50_baseline.set_index('package').loc[top_50_orig['package']].reset_index()
+        axes[1].plot(x, normalize(top_50_baseline['baseline_mean_pagerank']), 'o-', 
+                    label='PageRank', linewidth=1.5, markersize=4)
+        axes[1].plot(x, normalize(top_50_baseline['baseline_mean_in_degree_centrality']), 's-', 
+                    label='In-Degree', linewidth=1.5, markersize=4)
+        axes[1].plot(x, normalize(top_50_baseline['baseline_mean_eigenvector_centrality']), '^-', 
+                    label='Eigenvector', linewidth=1.5, markersize=4)
+        axes[1].set_xlabel('Rank', fontsize=11)
+        axes[1].set_ylabel('Normalized Centrality', fontsize=11)
+        axes[1].set_title('Baseline: Centrality Measures (Top 50)', fontsize=12, fontweight='bold')
+        axes[1].legend(fontsize=9)
+        axes[1].grid(True, alpha=0.3)
+        
+        plt.tight_layout()
+        plot4_file = PLOTS_DIR / "4_centrality_measures_top50.png"
+        plt.savefig(plot4_file, dpi=300, bbox_inches='tight')
+        print(f"    ✓ Saved: {plot4_file}")
+        plt.close()
+        
+        # ========== PLOT 5: Z-Score Analysis ==========
+        print("  - Plot 5: Z-Score Distribution and Top Packages...")
+        fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+        
+        z_pr = comparison_df['z_score_pagerank']
+        
+        # Z-score distribution
+        axes[0].hist(z_pr[z_pr.abs() < 50], bins=50, edgecolor='black', alpha=0.7, color='steelblue')
+        axes[0].axvline(x=2, color='red', linestyle='--', label='|z|=2 (95%)', linewidth=2)
+        axes[0].axvline(x=-2, color='red', linestyle='--', linewidth=2)
+        axes[0].axvline(x=3, color='darkred', linestyle='--', label='|z|=3 (99.7%)', linewidth=2)
+        axes[0].axvline(x=-3, color='darkred', linestyle='--', linewidth=2)
+        axes[0].set_xlabel('Z-Score (PageRank)', fontsize=11)
+        axes[0].set_ylabel('Frequency', fontsize=11)
+        axes[0].set_title('Z-Score Distribution', fontsize=12, fontweight='bold')
+        axes[0].legend(fontsize=9)
+        axes[0].grid(True, alpha=0.3)
+        
+        # Top 20 by z-score
+        top20_z = comparison_df.head(20)
+        y_pos = range(len(top20_z))
+        axes[1].barh(y_pos, top20_z['z_score_pagerank'], color='steelblue', alpha=0.8)
+        axes[1].set_yticks(y_pos)
+        axes[1].set_yticklabels(top20_z['package'], fontsize=9)
+        axes[1].set_xlabel('Z-Score', fontsize=11)
+        axes[1].set_title('Top 20 Packages by Z-Score', fontsize=12, fontweight='bold')
+        axes[1].invert_yaxis()
+        axes[1].axvline(x=3, color='red', linestyle='--', alpha=0.7, linewidth=2, label='z=3')
+        axes[1].legend(fontsize=9)
+        axes[1].grid(True, alpha=0.3, axis='x')
+        
+        plt.tight_layout()
+        plot5_file = PLOTS_DIR / "5_zscore_analysis.png"
+        plt.savefig(plot5_file, dpi=300, bbox_inches='tight')
+        print(f"    ✓ Saved: {plot5_file}")
+        plt.close()
+        
+        print(f"\n✓ All 5 plots generated successfully!")
         
     except Exception as e:
         print(f"\n⚠ Could not create visualizations: {e}")
+        import traceback
+        traceback.print_exc()
 
 
 def save_results(comparison_df):
