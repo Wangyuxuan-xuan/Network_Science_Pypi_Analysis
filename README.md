@@ -98,7 +98,7 @@ To regenerate the datasets from scratch, execute the scripts in numerical order 
 
 ## Objective 1: Core Package Identification using Centrality Analysis
 
-Results in `results/centrality` folder:
+Results in `01_centrality_core_packages/results/centrality` folder:
 
 ### Running the Analysis
 
@@ -115,15 +115,16 @@ conda activate pypi-net
 Analyzes the real PyPI dependency network and computes all centrality measures:
 
 ```bash
+cd 01_centrality_core_packages
 python centrality.py
 ```
 
 **Output:**
-- `results/centrality/centrality_results.csv` - Full results for all packages
-- `results/centrality/top_packages.csv` - Top 100 packages by PageRank
-- `results/centrality/centrality_summary.txt` - Statistical summary
-- `results/centrality/centrality_analysis.png` - 4-panel visualization
-- `results/centrality/objective1_report.md` - Comprehensive analysis report
+- `01_centrality_core_packages/results/centrality/centrality_results.csv` - Full results for all packages
+- `01_centrality_core_packages/results/centrality/top_packages.csv` - Top 100 packages by PageRank
+- `01_centrality_core_packages/results/centrality/centrality_summary.txt` - Statistical summary
+- `01_centrality_core_packages/results/centrality/centrality_analysis.png` - 4-panel visualization
+- `01_centrality_core_packages/results/centrality/objective1_report.md` - Comprehensive analysis report
 
 **Runtime:** ~50-75 minutes (with betweenness centrality with k=5000 sample)
 without betweeness: 5mins
@@ -221,6 +222,8 @@ All scripts and outputs for this objective are located in `03_community_detectio
 
 **Directory:** `03_community_detection/01_Louvain_method`
 
+* **Running the Analysis:** Open and run the Jupyter notebook `03_community_detection/01_Louvain_method/Objective3_01_Louvain.ipynb` in VS Code or Jupyter Lab. The notebook contains all the code for performing Louvain community detection on both real and randomized data.
+
 * **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
 * **Methodology:** We project the directed PyPI dependency graph into an undirected graph. Then we apply the Louvain algorithm, which iteratively maximizes modularity (Q).
 **The modularity score:** The Q value measures the strength of community division compared to a random graph with the same degree distribution.
@@ -228,14 +231,14 @@ All scripts and outputs for this objective are located in `03_community_detectio
 Output Files Example: We take RealData as output files example.
 | Output File | Description |
 | --- | --- |
-| `analysis_summary.txt` | Summary for top 5 largest communities, including modularity and community sizes. |
-| `1_pagerank_core_for_gephi.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank. |
-| `top_5_stacks_summary.csv` | Summary table for the top 5 largest communities. |
-| `Abstract Dependency Network of Top 10 PyPI Stacks.png` | Visualization of the dependency network for the top 10 largest PyPI communities. |
-| `Core dependency structure for stack 6.png` | Visualization of the core dependency structure for stack 6. |
-| `2_top_5_communities_for_gephi.gexf` | GEXF file for Gephi visualization of the top 5 largest communities. |
-| `3_abstract_community_network.gexf` | GEXF file for Gephi visualization of the abstract community network. |
-| `pypi_full_partition_realdata.csv` | Detailed full partition of all nodes for real data. |
+| `03_community_detection/01_Louvain_method/RealData/analysis_summary.txt` | Summary for top 5 largest communities, including modularity and community sizes. |
+| `03_community_detection/01_Louvain_method/RealData/1_pagerank_core_for_gephi.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank. |
+| `03_community_detection/01_Louvain_method/RealData/top_5_stacks_summary.csv` | Summary table for the top 5 largest communities. |
+| `03_community_detection/01_Louvain_method/Abstract Dependency Network of Top 10 PyPI Stacks.png` | Visualization of the dependency network for the top 10 largest PyPI communities. |
+| `03_community_detection/01_Louvain_method/Core dependency structure for stack 6.png` | Visualization of the core dependency structure for stack 6. |
+| `03_community_detection/01_Louvain_method/RealData/2_top_5_communities_for_gephi.gexf` | GEXF file for Gephi visualization of the top 5 largest communities. |
+| `03_community_detection/01_Louvain_method/RealData/3_abstract_community_network.gexf` | GEXF file for Gephi visualization of the abstract community network. |
+| `03_community_detection/01_Louvain_method/RealData/pypi_full_partition_realdata.csv` | Detailed full partition of all nodes for real data. |
 
 * **Key Insight:** 
 The real PyPI network exhibits a markedly stronger community structure than the randomized baselines. The observed modularity exceeds the baseline average by a wide margin, indicating that packages are organized into cohesive groups that are far denser internally than expected under random connectivity.
@@ -245,6 +248,8 @@ The real PyPI network exhibits a markedly stronger community structure than the 
 
 **Directory:** `03_community_detection/02_LPA_method`
 
+* **Running the Analysis:** Open and run the Jupyter notebook `03_community_detection/02_LPA_method/Objective3_02_LPA.ipynb` in VS Code or Jupyter Lab. The notebook contains all the code for performing LPA community detection on both real and randomized data.
+
 * **Input Data:** Real Data: `pypi_dag` (Stage 3 Data - **Cycles Removed**). Random Data: the randomized datasets generated for Objective 5. *Note: This analysis requires a strict DAG.*
 * **Methodology:** We apply the Label Propagation Algorithm (LPA) on the same graph. LPA is a fast, heuristic approach that assigns nodes to communities based on iterative label propagation.
 **Compared to Louvain:** While less aggressive than Louvain, it provides a robustness check to confirm that the modular structure identified is meaningful.
@@ -252,9 +257,9 @@ The real PyPI network exhibits a markedly stronger community structure than the 
 Output Files Example: We take RealData as output files example.
 | Output File | Description |
 | --- | --- |
-| `analysis_summary_lpa.txt` | Summary for top 5 largest communities detected using LPA. |
-| `1_pagerank_core_lpa.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank using LPA. |
-| `2_abstract_community_network_lpa.csv` | Summary table for the top 5 largest communities detected using LPA. |
+| `03_community_detection/02_LPA_method/RealData/analysis_summary_lpa.txt` | Summary for top 5 largest communities detected using LPA. |
+| `03_community_detection/02_LPA_method/RealData/1_pagerank_core_lpa.gexf` | GEXF file for Gephi visualization of core nodes ranked by PageRank using LPA. |
+| `03_community_detection/02_LPA_method/RealData/2_abstract_community_network_lpa.csv` | Summary table for the top 5 largest communities detected using LPA. |
 
 * **Key Insight:**
 The real network’s LPA Q is much more higher than the random baseline, highlighting strong modular structure. LPA reveals a dominant cluster containing 86% of packages, whereas the random network shows >98% in one cluster. This confirms that while the ecosystem is highly interconnected, Louvain better uncovers subtle modular boundaries.
@@ -301,7 +306,10 @@ python resilience.py
 
 **Prerequisites:**
 - Requires completed Objective 1 (centrality analysis results)
-- Requires randomized graphs from Objective 5 baseline analysis (optional, for null model comparison)
+  - Copy `01_centrality_core_packages/results/centrality/centrality_results.csv` to `04_assess_ecosystem_resilience/dataset/centrality/`
+  - Copy `01_centrality_core_packages/results/centrality/top_packages.csv` to `04_assess_ecosystem_resilience/dataset/centrality/`
+- Requires randomized graphs from Objective 5 (for null model comparison)
+  - Copy or symlink `01_centrality_core_packages/results/baseline/random_graphs/` to `04_assess_ecosystem_resilience/dataset/baseline/random_graphs/`
 
 **Runtime:** ~40-45 minutes
 - Original network removal experiments: ~3-4 minutes
@@ -311,11 +319,11 @@ python resilience.py
 
 | Output File | Description |
 | --- | --- |
-| `results/resilience_results.csv` | Complete dataset for all removal experiments on original network |
-| `results/null_model_results.csv` | Averaged dataset from 5 randomized graphs (for comparison) |
-| `results/resilience_summary.txt` | Comprehensive analysis summary with key findings and critical thresholds |
-| `results/resilience_analysis.png` | Visualization plots showing network fragmentation and LWCC retention |
-| `results/resilience_null_model_comparison.png` | Comparison plot: original network vs averaged randomized networks |
+| `04_assess_ecosystem_resilience/results/resilience_results.csv` | Complete dataset for all removal experiments on original network |
+| `04_assess_ecosystem_resilience/results/null_model_results.csv` | Averaged dataset from 5 randomized graphs (for comparison) |
+| `04_assess_ecosystem_resilience/results/resilience_summary.txt` | Comprehensive analysis summary with key findings and critical thresholds |
+| `04_assess_ecosystem_resilience/results/resilience_analysis.png` | Visualization plots showing network fragmentation and LWCC retention |
+| `04_assess_ecosystem_resilience/results/resilience_null_model_comparison.png` | Comparison plot: original network vs averaged randomized networks |
 
 ### Key Findings
 
@@ -360,18 +368,19 @@ The randomization algorithm:
 
 This isolates the effect of network structure from the effect of popularity (degree).
 
-### 2. Generate Random Graphs
+### 1. Generate Random Graphs
 
 Creates 5 randomized versions of the network using order-preserving edge swaps:
 
 ```bash
-python generate_random_graphs.py
+cd 01_centrality_core_packages
+python ../05_null_model_baseline_comparison/generate_random_graphs.py
 ```
 
 **Output:**
-- `results/baseline/random_graphs/random_graph_1.pkl` through `random_graph_5.pkl`
-- `results/baseline/randomization_stats.csv` - Generation statistics
-- `results/baseline/random_graphs_config.json` - Configuration used
+- `01_centrality_core_packages/results/baseline/random_graphs/random_graph_1.pkl` through `random_graph_5.pkl`
+- `01_centrality_core_packages/results/baseline/randomization_stats.csv` - Generation statistics
+- `01_centrality_core_packages/results/baseline/random_graphs_config.json` - Configuration used
 
 **Runtime:** ~20-60 minutes (5 graphs × 4-12 min each)
 
@@ -396,11 +405,12 @@ This algorithm guarantees:
 
 The topological ordering constraint is the key innovation that allows randomization of DAGs without cycle detection overhead.
 
-### 3. Compute Baseline Centrality
+### 2. Compute Baseline Centrality
 
 Computes centrality measures on all 5 random graphs and compares with the original:
 
 ```bash
+cd 01_centrality_core_packages
 python baseline_centrality.py
 ```
 
@@ -414,18 +424,22 @@ CONFIG = {
 ```
 
 **Output:**
-- `results/baseline/baseline_comparison.csv` - Full comparison with z-scores
-- `results/baseline/significant_packages.csv` - Statistically significant packages (|z| > 2)
-- `results/baseline/comparison_summary.txt` - Statistical summary
-- `results/baseline/baseline_comparison.png` - 4-panel visualization
+- `01_centrality_core_packages/results/baseline/centrality/baseline_comparison.csv` - Full comparison with z-scores
+- `01_centrality_core_packages/results/baseline/centrality/significant_packages.csv` - Statistically significant packages (|z| > 2)
+- `01_centrality_core_packages/results/baseline/centrality/comparison_summary.txt` - Statistical summary
+- `01_centrality_core_packages/results/baseline/centrality/1_pagerank_distribution.png` - PageRank distribution comparison
+- `01_centrality_core_packages/results/baseline/centrality/2_top20_packages.png` - Top 20 packages comparison
+- `01_centrality_core_packages/results/baseline/centrality/3_pagerank_vs_indegree.png` - PageRank vs In-Degree correlation
+- `01_centrality_core_packages/results/baseline/centrality/4_centrality_measures_top50.png` - Multiple centrality measures for top 50 packages
+- `01_centrality_core_packages/results/baseline/centrality/5_zscore_analysis.png` - Z-score analysis
 
 
-### 4. Analyze Results (Notebook)
+### 3. Analyze Results (Notebook)
 
 Interactive analysis comparing original vs baseline:
 
 ```bash
-jupyter notebook results/baseline/centrality/result_analysis.ipynb
+jupyter notebook 01_centrality_core_packages/results/baseline/centrality/result_analysis.ipynb
 ```
 
 Or open the notebook in VS Code for interactive exploration.
