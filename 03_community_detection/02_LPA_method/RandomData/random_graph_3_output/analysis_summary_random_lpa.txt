@@ -1,0 +1,17 @@
+NETWORK ANALYSIS SUMMARY (LPA on Random Data)
+=============================================
+Date: 2025-12-28 21:35:29
+Modularity Score (Q): 0.0037
+Total Communities: 2990
+
+--- TOP 10 LARGEST STACKS (LPA) ---
+Stack #1 (ID: 0): Size=391409 (98.39%) -> Sample Nodes: ['odoo12-addon-mrp-bom-current-stock', 'mcp-sql-server', 'piwavelet', 'django-live-dashboard', 'device-inductance']
+Stack #2 (ID: 43): Size=84 (0.02%) -> Sample Nodes: ['odoo13-addon-purchase-line-procurement-group', 'dbt-cratedb', 'ldapsearchad', 'damv1myparamikossh', 'calendar-base']
+Stack #3 (ID: 8): Size=25 (0.01%) -> Sample Nodes: ['open-multicaller', 'mathlamp', 'odoo14-addon-account-payment-paired-internal-transfer', 'waqi-python', 'pypai']
+Stack #4 (ID: 5): Size=8 (0.00%) -> Sample Nodes: ['odoo11-addon-l10n-ro-partner-unique', 'odoo12-addon-l10n-it-ateco', 'python-isl', 'gepcat', 'sdf-cli']
+Stack #5 (ID: 627): Size=6 (0.00%) -> Sample Nodes: ['django-theme-academy', 'boto3-dataclass-opsworkscm', 'pyneng-quiz', 'polyrename', 'odoo13-addon-account-bank-statement-import-guess-partner']
+Stack #6 (ID: 853): Size=6 (0.00%) -> Sample Nodes: ['ea-toolkit', 'u0-stitcher', 'duckdi', 'openweave', 'chibi-auth0']
+Stack #7 (ID: 1544): Size=6 (0.00%) -> Sample Nodes: ['peaky', 'odoo-addon-membership-initial-fee', 'mortal-ini', 'everytime-parser', 'pypotd']
+Stack #8 (ID: 1550): Size=6 (0.00%) -> Sample Nodes: ['pay-attention-pipeline', 'odoo13-addon-res-company-code', 'odoo-addon-purchase-partner-selectable-option', 'odoo14-addon-stock-intercompany', 'pycufsm']
+Stack #9 (ID: 44): Size=5 (0.00%) -> Sample Nodes: ['pucktrick', 'sentileak', 's3prl', 'uname2', 'ac-auto']
+Stack #10 (ID: 65): Size=5 (0.00%) -> Sample Nodes: ['pyolap', 'llmtoolset', 'pynetcon', 'lkj', 'lcd-module']

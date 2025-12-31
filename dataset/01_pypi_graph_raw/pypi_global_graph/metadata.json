@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2025-11-20T01:40:42Z",
+  "num_projects_processed": 700036,
+  "num_edges": 1842517,
+  "output_files": {
+    "nodes": "/workspace/crawler/pypi_global_graph/nodes.csv",
+    "edges": "/workspace/crawler/pypi_global_graph/edges.csv",
+    "adjacency": "/workspace/crawler/pypi_global_graph/adjacency.jsonl",
+    "metadata": "/workspace/crawler/pypi_global_graph/metadata.json"
+  }
+}

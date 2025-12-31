@@ -1,0 +1,40 @@
+
+==================================================
+        NETWORK ANALYSIS SUMMARY (RANDOM DATA)
+==================================================
+Date: 2025-12-28 21:44:09
+Graph Name: Random Graph: random_graph_1.pkl
+
+--- GRAPH DIAGNOSTICS ---
+Nodes (Packages): 397797
+Edges (Dependencies): 1819936
+DAG Property: Valid (No cycles)
+
+--- COMMUNITY STRUCTURE (Louvain) ---
+Modularity Score (Q): 0.2389
+Total Communities Found: 551
+
+--- TOP 10 LARGEST STACKS (RANDOM STRUCTURE) ---
+
+Stack #1 (ID: 179): Size=22418 (5.64%)
+  Core Hubs: numpy, docstring-parser, wagtail, magicgui, diffusers, anytree, weasyprint, stevedore
+Stack #2 (ID: 22): Size=21600 (5.43%)
+  Core Hubs: requests, nest-asyncio, gymnasium, tomli-w, ftfy, snowflake-connector-python, whitenoise, evaluate
+Stack #3 (ID: 30): Size=18724 (4.71%)
+  Core Hubs: pandas, paramiko, gunicorn, pbr, pint, rsa, notebook, isort
+Stack #4 (ID: 33): Size=12478 (3.14%)
+  Core Hubs: scipy, pyperclip, tornado, prometheus-client, fonttools, pyqt6, absl-py, exceptiongroup
+Stack #5 (ID: 3): Size=12307 (3.09%)
+  Core Hubs: matplotlib, dataclasses, python-docx, elasticsearch, antlr4-python3-runtime, python-gitlab, pyvista, tensorboardx
+Stack #6 (ID: 29): Size=11881 (2.99%)
+  Core Hubs: pyyaml, tomlkit, opentelemetry-api, dataclasses-json, pytest-asyncio, deepdiff, jieba, python-telegram-bot
+Stack #7 (ID: 5): Size=11871 (2.98%)
+  Core Hubs: pydantic, colorlog, aws-cdk-lib, ujson, wcwidth, azure-storage-blob, sounddevice, pyotp
+Stack #8 (ID: 24): Size=11314 (2.84%)
+  Core Hubs: click, spacy, emoji, pyodbc, python-socketio, jedi, ply, inflect
+Stack #9 (ID: 36): Size=10711 (2.69%)
+  Core Hubs: tqdm, pymysql, itsdangerous, pypdf, multidict, jupyter-server, virtualenv, mutagen
+Stack #10 (ID: 26): Size=8474 (2.13%)
+  Core Hubs: odoo, pycryptodome, tzdata, bcrypt, dateparser, sqlmodel, waitress, tree-sitter
+
+==================================================
